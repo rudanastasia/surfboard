@@ -144,7 +144,7 @@
                         </div>
                     </div>
                     <ul class="reviews__switcher">
-                        <li class="reviews__switcher-item interactive-avatar">
+                        <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
                             <a href="#" class="interactive-avatar__link">
                                 <img src="https://rudanastasia.github.io/surfboard/img/icons/girl1.png" alt="avatar" class="interactive-avatar__img">
                             </a>
