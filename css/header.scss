@@ -5,9 +5,14 @@
     color: white;
 }
 
+.menu {
+    display: flex;
+}
+
 .menu__list {
     display: flex;
     align-items: center;
+    margin-right: 104px;
 }
 
 .menu__item {
