@@ -76,6 +76,55 @@
                     </div>
                 </div>
             </section>
+            <secction class="section">
+                <div class="container">
+                    <div class="headline">
+                     <h2 class="section__title headline__title">Почему Surfboard?</h2>
+                     <div class="headline__subtitle">Мы создаем уникальные и качественные доски из прочных и экологичных материалов.</div>
+                    </div>
+                    <ul class="benefits">
+                        <li class="benefits__item benefit">
+                            <div class="benefit__image">
+                                <div class="benefit__image-wrapper">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/perfect.svg" alt="benefit" class="benefit__icon">
+                                </div>
+                            </div>
+                            <div class="benefit__text">
+                                <h3 class="benefit__title">Perfect Fit</h3>
+                                <div class="benefit__desc">
+                                    <p>Мы создаем доски по индивидуальным замерам. Мы учитываем при создании ваш рост, вес и уровень подготовки.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="benefits__item benefit">
+                            <div class="benefit__image">
+                                <div class="benefit__image-wrapper">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/strong.svg" alt="benefit" class="benefit__icon">
+                                </div>
+                            </div>
+                            <div class="benefit__text">
+                                <h3 class="benefit__title">Strong</h3>
+                                <div class="benefit__desc">
+                                    <p>Мы используем только качественные и экологичные материалы. Ваша доска прослужит вам долгие годы.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="benefits__item benefit">
+                            <div class="benefit__image">
+                                <div class="benefit__image-wrapper">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/unique.svg" alt="benefit" class="benefit__icon">
+                                </div>
+                            </div>
+                            <div class="benefit__text">
+                                <h3 class="benefit__title">Unique</h3>
+                                <div class="benefit__desc">
+                                    <p>Вы станете обладателем уникального серфборда. Доска будет выполнена по вашему уникальному дизайну.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </secction>
         </div>
     </div>
 </body>
