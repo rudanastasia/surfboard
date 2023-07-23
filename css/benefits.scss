@@ -1,0 +1,29 @@
+.benefits {
+    display: flex;
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:before {
+        content: url(https://rudanastasia.github.io/surfboard/img/icons/separator.png);
+        position: absolute;
+        right: 0;
+        top: 30px;
+        transform: translateX(50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
