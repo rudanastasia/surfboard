@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </section>
-            <secction class="section">
+            <section class="section">
                 <div class="container">
                     <div class="headline">
                      <h2 class="section__title headline__title">Почему Surfboard?</h2>
@@ -124,7 +124,7 @@
                         </li>
                     </ul>
                 </div>
-            </secction>
+            </section>
         </div>
     </div>
 </body>
