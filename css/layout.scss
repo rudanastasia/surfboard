@@ -3,7 +3,7 @@ body {
     height: 100%;
 }
 
-.body {
+body {
     font-size: $baseFontSize;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -39,7 +39,7 @@ table {
     border-collapse: collapse;
 }
 
-.ul {
+ul {
     padding: 0;
     margin: 0;
     li {
@@ -47,12 +47,12 @@ table {
     }
 }
 
-.p {
+p {
     padding: 0;
     margin: 0;
 }
 
-.footer {
+footer {
     position: relative;
     width: 100%;
 }
@@ -65,8 +65,7 @@ a {
     color: inherit;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
 }
-
