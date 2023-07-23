@@ -125,6 +125,44 @@
                     </ul>
                 </div>
             </section>
+            <section class="section">
+                <div class="container">
+                 <h2 class="section__title">Отзывы</h2>
+                 <div class="reviews">
+                    <div class="reviews__display">
+                        <div class="reviews__display-inner">
+                            <div class="reviews__avatar">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl.png" alt="avatar" class="reviews__avatar-img">
+                            </div>
+                            <article class="reviews__content">
+                                <h3 class="reviews__title">Лучший дизайн</h3>
+                                <div class="reviews__text">
+                                    <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)</p>
+                                </div>
+                                <div class="reviews__author">Алена Хмельницкая</div>
+                            </article>
+                        </div>
+                    </div>
+                    <ul class="reviews__switcher">
+                        <li class="reviews__switcher-item interactive-avatar">
+                            <a href="#" class="interactive-avatar__link">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl1.png" alt="avatar" class="interactive-avatar__img">
+                            </a>
+                        </li>
+                        <li class="reviews__switcher-item interactive-avatar">
+                            <a href="#" class="interactive-avatar__link">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar" class="interactive-avatar__img">
+                            </a>
+                        </li>
+                        <li class="reviews__switcher-item interactive-avatar">
+                            <a href="#" class="interactive-avatar__link">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar" class="interactive-avatar__img">
+                            </a>
+                        </li>
+                    </ul>
+                 </div>
+                </div>
+            </section>
         </div>
     </div>
 </body>
