@@ -3,6 +3,15 @@
     min-height: 650px;
     flex-direction: column;
     justify-content: center;
+
+    &--font-color--white {
+        color: white;
+        background: url(https://rudanastasia.github.io/surfboard/img/decor/cta.png) center top no-repeat;
+
+        .section__title {
+            color: inherit;
+        }
+    }
 }
 
 .section__title {
