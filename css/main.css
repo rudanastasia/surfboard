@@ -78,6 +78,7 @@ img {
   background-color: white;
   height: 100vh;
   min-height: 650px;
+  background-size: cover;
 }
 
 .hero__title-section {
@@ -243,7 +244,8 @@ img {
 }
 .section--font-color--white {
   color: white;
-  background: url(https://rudanastasia.github.io/surfboard/img/decor/cta.png) center top no-repeat;
+  background: url(https://rudanastasia.github.io/surfboard/img/decor/foarm-bg.png) center top no-repeat;
+  background-size: cover;
 }
 .section--font-color--white .section__title {
   color: inherit;
@@ -519,6 +521,42 @@ img {
   border-radius: 50%;
   position: absolute;
   display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: white;
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: block;
+  background: white;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
