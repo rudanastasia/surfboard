@@ -76,13 +76,14 @@ img {
 .hero {
   background: url(https://rudanastasia.github.io/surfboard/img/decor/bgmain.png) center top no-repeat;
   background-color: white;
-  height: 100vh;
+  /*height: 100vh;*/
   min-height: 650px;
   background-size: cover;
 }
 
 .hero__title-section {
   width: 46%;
+  margin-top: 107px;
 }
 
 .hero__container {
@@ -111,9 +112,10 @@ img {
 
 .hero__title-description {
   font-size: 21px;
-  margin-bottom: 28px;
+  margin-bottom: 56px;
   padding-right: 10%;
   color: white;
+  margin-top: 26px;
 }
 
 .header {
@@ -143,6 +145,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 104px;
+  font-weight: bold;
 }
 
 .menu__item {
@@ -181,6 +184,7 @@ img {
 
 .features__item {
   margin-right: 46px;
+  margin-top: 78px;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -232,7 +236,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  /*height: 100vh;*/
   min-height: 650px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -261,15 +265,16 @@ img {
 
 .headline {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .headline__title {
-  margin-bottom: 25px;
+  margin-bottom: 11px;
 }
 
 .headline__subtitle {
   padding: 0 26%;
+  margin-bottom: 46px;
 }
 
 .benefits {
@@ -316,6 +321,7 @@ img {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .benefit__icon {
@@ -330,9 +336,10 @@ img {
 
 .benefit__title {
   font-weight: bold;
+  font-size: 27px;
 }
 
-.benefit_desc {
+.benefit__desc {
   font-size: 18px;
   line-height: 21.6px;
   text-align: center;
@@ -341,7 +348,7 @@ img {
 
 .reviews__display {
   background: #F8FAF9;
-  padding: 50px 45px 34px;
+  padding: 42px 39px 34px;
 }
 
 .reviews__display-inner {
@@ -385,16 +392,20 @@ img {
 .reviews__title {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: 9px;
+  margin-top: 20px;
+  padding-left: 16px;
 }
 
 .reviews__text {
   margin-bottom: 36px;
+  padding-left: 20px;
 }
 
 .reviews__author {
   font-size: 18px;
   font-weight: bold;
+  padding-left: 20px;
 }
 
 .interactive-avatar {
@@ -446,7 +457,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 18px;
 }
 
 .form__block {
@@ -466,7 +476,7 @@ img {
   border: solid 3px transparent;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 148px;
   resize: none;
 }
 .form__input:focus {
@@ -480,6 +490,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 12px;
+}
+
+.form__btns {
+  margin-top: 53px;
 }
 
 .radio {
@@ -491,6 +506,9 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-top: 27px;
+  margin-bottom: -7px;
+  padding-right: 27px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -512,6 +530,7 @@ img {
   position: relative;
   border-radius: 50%;
   background: white;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
