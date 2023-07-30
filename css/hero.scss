@@ -1,14 +1,14 @@
 .hero {
     background: url(https://rudanastasia.github.io/surfboard/img/decor/bgmain.png) center top no-repeat;
     background-color: white;
-    height: 100vh;
+    /*height: 100vh;*/
     min-height: 650px;
     background-size: cover;
 }
 
 .hero__title-section {
     width: 46%;
-
+    margin-top: 107px;
 }
 
 .hero__container {
@@ -30,7 +30,8 @@
 
 .hero__title-description {
     font-size: 21px;
-    margin-bottom: 28px;
+    margin-bottom: 56px;
     padding-right: 10%;
     color: white;
+    margin-top: 26px;
 }
