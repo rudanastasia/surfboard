@@ -10,6 +10,7 @@
     background: #F2F5F4;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .benefit__icon {
@@ -23,9 +24,10 @@
 
 .benefit__title {
     font-weight: bold;
+    font-size: 27px;
 }
 
-.benefit_desc {
+.benefit__desc {
     font-size: 18px;
     line-height: 21.6px;
     text-align: center;
