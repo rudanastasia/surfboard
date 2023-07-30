@@ -163,7 +163,7 @@
                  </div>
                 </div>
             </section>
-            <section class="section order-section">
+            <section class="section order-section section--font-color--white">
                 <div class="container">
                     <h2 class="section__title">Закажите доску</h2>
                     <form class="form">
@@ -210,11 +210,65 @@
                                     <textarea class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
+                            <div class="form__controls">
+                                <label class="radio">
+                                    <input type="radio" name="option" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="radio__title">Оплата наличными</div>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="option" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="radio__title">Оплата картой</div>
+                                </label>
+                            </div>
+                            <div class="form__controls">
+                                <label class="radio radio--checkbox">
+                                    <input type="checkbox" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="radio__title">Не перезванивать</div>
+                                </label>
+                            </div>
+                            <div class="form__btns">
+                                <input type="submit" value="Заказать" class="btn btn--theme--yellow">
+                                <input type="reset" value="Очистить" class="btn btn--theme--transparent">
+                            </div>
                         </div>
                     </form>
                 </div>
             </section>
         </div>
     </div>
+    <nav class="fixed-menu">
+        <ul class="fixed-menu__list">
+            <li class="fixed-menu__item fixed-menu__item--active">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
