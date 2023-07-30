@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
     <title>Surfboard</title>
 </head>
@@ -38,13 +38,18 @@
                                     <a href="#" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
-                            <a href="tel:+78009039090" class="phone-number">
+                        </nav>    
+                            <a href="tel:+78009039090" class="phone-number header__phone-number">
                                 <span class="phone-number__icon">
                                     <img src="https://rudanastasia.github.io/surfboard/img/icons/phone.svg" class="phone-number__icon-elem" alt="phone">
                                 </span>
                                 <span class="phone-number__text">8 800 903 90 90</span>
                             </a>
-                        </nav>
+                            <a href="" class="hamburger">
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                            </a>
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для 
