@@ -156,6 +156,41 @@
                     </ul>
                 </div>
             </section>
+            <section class="section__slaider">
+                <div class="container">
+                    <div class="slider__all">
+                        <div class="slaider__img">
+                        <img src="https://rudanastasia.github.io/surfboard/img/decor/surf1.png" alt="photo" class="slaider__img">
+                        </div>
+                        <div class="slider__inner">
+                        <div class="slaider__param">
+                            <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo" class="param__img">
+                        </div>
+                        <div class="slaider__content">
+                            <h2 class="slider__title">Лонгборд 2.0</h2>
+                            <div class="slaider__desc">
+                                <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__tech">
+                            <div class="tech__dl">
+                                <div class="tech__dl__title">Длина доски</div>
+                                <div class="tech__dl__desc">от 2,5 метров</div>
+                            </div>
+                            <div class="tech__dl">
+                                <div class="tech__dl__title">Ширина доски</div>
+                                <div class="tech__dl__desc">от 40 сантиметров</div>
+                            </div>
+                        </div>
+                        <div class="slider__cust">
+                        <div class="slider__price">7000 ₽</div>
+                        <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
             <section class="section">
                 <div class="container">
                  <h2 class="section__title">Отзывы</h2>
