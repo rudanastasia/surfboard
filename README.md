@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/script.js"></script>
     <title>Surfboard</title>
 </head>
 <body>
@@ -50,6 +51,31 @@
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                             </a>
+                            <div class="menu__burger">
+                                <ul class="menu__burger__list">
+                                    <li class="menu__burger__item">
+                                        <a href="#" class="menu__burger__link">О нас</a>
+                                    </li>
+                                    <li class="menu__burger__item">
+                                        <a href="#" class="menu__burger__link">Серфборды</a>
+                                    </li>
+                                    <li class="menu__burger__item">
+                                        <a href="#" class="menu__burger__link">Команда</a>
+                                    </li>
+                                    <li class="menu__burger__item">
+                                        <a href="#" class="menu__burger__link">Меню</a>
+                                    </li>
+                                    <li class="menu__burger__item">
+                                        <a href="#" class="menu__burger__link">Отзывы</a>
+                                    </li>
+                                    <li class="menu__burger__item">
+                                        <a href="#" class="menu__burger__link">Как мы работаем</a>
+                                    </li>
+                                    <li class="menu__burger__item">
+                                        <a href="#" class="menu__burger__link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для 
