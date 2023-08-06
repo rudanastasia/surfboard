@@ -1,6 +1,7 @@
 .benefits {
     display: flex;
     margin-top: 1.875rem;
+    max-width: 95%;
 
     @include phones {
         flex-direction: column;
