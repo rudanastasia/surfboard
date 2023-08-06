@@ -1,0 +1,61 @@
+.slider__all {
+    display: flex;
+}
+
+.slider__inner {
+    width: 45%;
+}
+
+.slaider__param {
+    margin-bottom: 30px;
+}
+
+.slider__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.75rem;
+    text-transform: uppercase;
+
+}
+
+.slaider__desc {
+    color: #666666;
+    line-height: 21.6px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.slider__tech {
+    display: flex;
+}
+
+.tech__dl {
+    margin-right: 83px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+.tech__dl__title {
+    color: #666666;
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 400;
+}
+
+.tech__dl__desc {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 700;
+}
+
+.slider__cust {
+    display: flex;
+}
+
+.slider__price {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    margin-right: 83px;
+}
