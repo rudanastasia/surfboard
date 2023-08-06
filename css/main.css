@@ -914,7 +914,7 @@ img {
 }
 
 .slaider__param {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .slider__title {
@@ -926,8 +926,8 @@ img {
 
 .slaider__desc {
   color: #666666;
-  line-height: 21.6px;
-  font-size: 18px;
+  line-height: 1.35rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
@@ -938,21 +938,21 @@ img {
 }
 
 .tech__dl {
-  margin-right: 83px;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-right: 3.1875rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .tech__dl__title {
   color: #666666;
-  font-size: 18px;
-  line-height: 21.6px;
+  font-size: 1.125rem;
+  line-height: 1.35rem;
   font-weight: 400;
 }
 
 .tech__dl__desc {
-  font-size: 18px;
-  line-height: 21.6px;
+  font-size: 1.125rem;
+  line-height: 1.35rem;
   font-weight: 700;
 }
 
@@ -963,8 +963,12 @@ img {
 }
 
 .slider__price {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
   font-weight: 300;
-  margin-right: 83px;
+  margin-right: 3.1875rem;
+}
+
+.slider__btn {
+  margin-top: 1.125rem;
 }
