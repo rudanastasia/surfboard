@@ -33,3 +33,16 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+.section__slaider {
+    min-height: 40.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F8FAF9;
+
+    @include tablets {
+        margin-bottom: 4.375rem;
+        padding-bottom: 6.25rem;
+    }
+}
