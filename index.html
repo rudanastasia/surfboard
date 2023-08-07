@@ -51,7 +51,7 @@
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                             </a>
-                            <div class="menu__burger">
+                            <!--<div class="menu__burger">
                                 <ul class="menu__burger__list">
                                     <li class="menu__burger__item">
                                         <a href="#" class="menu__burger__link">О нас</a>
@@ -75,7 +75,7 @@
                                         <a href="#" class="menu__burger__link">Контакты</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>-->
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для 
