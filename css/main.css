@@ -685,7 +685,7 @@ img {
   position: relative;
   cursor: pointer;
 }
-.reviews-switcher__item--active {
+.reviews-switcher__item.active {
   border-color: #FEDB3F;
 }
 
