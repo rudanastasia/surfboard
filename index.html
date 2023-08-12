@@ -283,19 +283,19 @@
                         </ul>
                     </div>
                     <ul class="reviews__switcher">
-                        <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                            <a class="interactive-avatar__link" data-open="one">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girlactive.png" alt="avatar" class="interactive-avatar__img">
+                        <li class="reviews__switcher-item active">
+                            <a class="reviews__switcher-item__link" data-open="one">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girlactive.png" alt="avatar" class="reviews__switcher-item__img">
                             </a>
                         </li>
-                        <li class="reviews__switcher-item interactive-avatar">
-                            <a class="interactive-avatar__link" data-open="two">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar" class="interactive-avatar__img">
+                        <li class="reviews__switcher-item">
+                            <a class="reviews__switcher-item__link" data-open="two">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar" class="reviews__switcher-item__img">
                             </a>
                         </li>
-                        <li class="reviews__switcher-item interactive-avatar">
-                            <a class="interactive-avatar__link" data-open="three">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar" class="interactive-avatar__img">
+                        <li class="reviews__switcher-item">
+                            <a class="reviews__switcher-item__link" data-open="three">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar" class="reviews__switcher-item__img">
                             </a>
                         </li>
                     </ul>
@@ -409,6 +409,6 @@
             </li>
         </ul>
     </nav>
-        <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
