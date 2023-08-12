@@ -269,7 +269,7 @@
                                 <li class="reviews__item" data-linked-with="three">
                                     <div class="reviews__display-inner">
                                         <div class="reviews__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/vas.png" alt="avatar" class="reviews__avatar-img">
+                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/vas.jpg" alt="avatar" class="reviews__avatar-img">
                                         </div>
                                            <article class="reviews__content">
                                                <h3 class="reviews__title">Устойчивость и безопасность</h3>
