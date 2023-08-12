@@ -283,19 +283,19 @@
                         </ul>
                     </div>
                     <ul class="reviews__switcher">
-                        <li class="reviews__switcher-item active">
-                            <a class="reviews__switcher-item__link" data-open="one">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girlactive.png" alt="avatar" class="reviews__switcher-item__img">
+                        <li class="reviews-switcher__item active">
+                            <a class="reviews-switcher__link" data-open="one">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girlactive.png" alt="avatar" class="reviews-switcher__img">
                             </a>
                         </li>
-                        <li class="reviews__switcher-item">
-                            <a class="reviews__switcher-item__link" data-open="two">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar" class="reviews__switcher-item__img">
+                        <li class="reviews-switcher__item">
+                            <a class="reviews-switcher__link" data-open="two">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar" class="reviews-switcher__img">
                             </a>
                         </li>
-                        <li class="reviews__switcher-item">
-                            <a class="reviews__switcher-item__link" data-open="three">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar" class="reviews__switcher-item__img">
+                        <li class="reviews-switcher__item">
+                            <a class="reviews-switcher__link" data-open="three">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar" class="reviews-switcher__img">
                             </a>
                         </li>
                     </ul>
