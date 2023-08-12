@@ -46,12 +46,15 @@
                                 </span>
                                 <span class="phone-number__text">8 800 903 90 90</span>
                             </a>
+                            <div class="open-modal">
                             <a href="" class="hamburger">
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                             </a>
-                            <!--<div class="menu__burger">
+                            </div>
+                            <!--<div class="modal">-->
+                            <div class="modal">
                                 <ul class="menu__burger__list">
                                     <li class="menu__burger__item">
                                         <a href="#" class="menu__burger__link">О нас</a>
@@ -75,7 +78,8 @@
                                         <a href="#" class="menu__burger__link">Контакты</a>
                                     </li>
                                 </ul>
-                            </div>-->
+                            </div>
+                            <div class="modal__close">x</div>
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для 
@@ -185,7 +189,9 @@
                         </div>
                         <div class="slider__cust">
                         <div class="slider__price">7000 ₽</div>
+                        <div class="slider__btn">
                         <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                    </div>
                     </div>
                     </div>
                     </div>
