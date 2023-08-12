@@ -39,6 +39,7 @@
                                     <a href="#" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
+                            <div class="modal__close">x</div>
                         </nav>    
                             <a href="tel:+78009039090" class="phone-number header__phone-number">
                                 <span class="phone-number__icon">
@@ -53,7 +54,7 @@
                                 <span class="hamburger__plank"></span>
                             </a>
                             </div>
-                            <!--<div class="modal">-->
+                            <!--<div class="modal">
                             <div class="modal">
                                 <ul class="menu__burger__list">
                                     <li class="menu__burger__item">
@@ -78,8 +79,7 @@
                                         <a href="#" class="menu__burger__link">Контакты</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="modal__close">x</div>
+                            </div>-->
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для 
@@ -162,39 +162,74 @@
             </section>
             <section class="section__slaider">
                 <div class="container">
-                    <div class="slider__all">
+                    <ul class="slider__all">
+                        <li class="slider__item">
                         <div class="slaider__img">
-                        <img src="https://rudanastasia.github.io/surfboard/img/decor/surf1.png" alt="photo" class="slaider__img">
+                           <img src="https://rudanastasia.github.io/surfboard/img/decor/surf1.png" alt="photo" class="slaider__img">
                         </div>
                         <div class="slider__inner">
-                        <div class="slaider__param">
-                            <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo" class="param__img">
+                           <div class="slaider__param">
+                                <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo" class="param__img">
+                           </div>
+                                <div class="slaider__content">
+                                    <h2 class="slider__title">Лонгборд 2.0</h2>
+                                        <div class="slaider__desc">
+                                           <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                                         </p>
+                                        </div>
+                                </div>
+                                    <div class="slider__tech">
+                                        <div class="tech__dl">
+                                            <div class="tech__dl__title">Длина доски</div>
+                                            <div class="tech__dl__desc">от 2,5 метров</div>
+                                        </div>
+                                        <div class="tech__dl">
+                                            <div class="tech__dl__title">Ширина доски</div>
+                                            <div class="tech__dl__desc">от 40 сантиметров</div>
+                                        </div>
+                                    </div>
+                                         <div class="slider__cust">
+                                             <div class="slider__price">7000 ₽</div>
+                                             <div class="slider__btn">
+                                             <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                                         </div>
                         </div>
-                        <div class="slaider__content">
-                            <h2 class="slider__title">Лонгборд 2.0</h2>
-                            <div class="slaider__desc">
-                                <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
-                                </p>
-                            </div>
                         </div>
-                        <div class="slider__tech">
-                            <div class="tech__dl">
-                                <div class="tech__dl__title">Длина доски</div>
-                                <div class="tech__dl__desc">от 2,5 метров</div>
-                            </div>
-                            <div class="tech__dl">
-                                <div class="tech__dl__title">Ширина доски</div>
-                                <div class="tech__dl__desc">от 40 сантиметров</div>
-                            </div>
+                    </li>
+                    <li class="slider__item">
+                        <div class="slaider__img">
+                           <img src="https://rudanastasia.github.io/surfboard/img/decor/surf2.png" alt="photo" class="slaider__img">
                         </div>
-                        <div class="slider__cust">
-                        <div class="slider__price">7000 ₽</div>
-                        <div class="slider__btn">
-                        <a href="#" class="btn btn--theme--yellow">Заказать</a>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
+                        <div class="slider__inner">
+                           <div class="slaider__param">
+                                <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo" class="param__img">
+                           </div>
+                                <div class="slaider__content">
+                                    <h2 class="slider__title">Шортборд</h2>
+                                        <div class="slaider__desc">
+                                           <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание в трубах.
+                                         </p>
+                                        </div>
+                                </div>
+                                    <div class="slider__tech">
+                                        <div class="tech__dl">
+                                            <div class="tech__dl__title">Длина доски</div>
+                                            <div class="tech__dl__desc">от 1,5 метров</div>
+                                        </div>
+                                        <div class="tech__dl">
+                                            <div class="tech__dl__title">Ширина доски</div>
+                                            <div class="tech__dl__desc">от 30 сантиметров</div>
+                                        </div>
+                                    </div>
+                                         <div class="slider__cust">
+                                             <div class="slider__price">12000 ₽</div>
+                                             <div class="slider__btn">
+                                             <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                                         </div>
+                        </div>
+                        </div>
+                    </li>
+                    </ul>
                 </div>
             </section>
             <section class="section">
@@ -202,32 +237,65 @@
                  <h2 class="section__title">Отзывы</h2>
                  <div class="reviews">
                     <div class="reviews__display">
-                        <div class="reviews__display-inner">
-                            <div class="reviews__avatar">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl.png" alt="avatar" class="reviews__avatar-img">
-                            </div>
-                            <article class="reviews__content">
-                                <h3 class="reviews__title">Лучший дизайн</h3>
-                                <div class="reviews__text">
-                                    <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__item active" data-linked-with="one">
+                            <div class="reviews__display-inner">
+                                <div class="reviews__avatar">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/girl.png" alt="avatar" class="reviews__avatar-img">
                                 </div>
-                                <div class="reviews__author">Ольга Макарова</div>
-                            </article>
-                        </div>
+                                   <article class="reviews__content">
+                                       <h3 class="reviews__title">Лучший дизайн</h3>
+                                       <div class="reviews__text">
+                                          <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)</p>
+                                       </div>
+                                       <div class="reviews__author">Ольга Макарова</div>
+                                    </article>
+                               </div>
+                            </li>
+                            <li class="reviews__item" data-linked-with="two">
+                                <div class="reviews__display-inner">
+                                    <div class="reviews__avatar">
+                                        <img src="https://rudanastasia.github.io/surfboard/img/icons/mark.png" alt="avatar" class="reviews__avatar-img">
+                                    </div>
+                                       <article class="reviews__content">
+                                           <h3 class="reviews__title">Нереальная скорость</h3>
+                                           <div class="reviews__text">
+                                              <p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                                                Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!</p>
+                                           </div>
+                                           <div class="reviews__author">Марк Брюлов</div>
+                                        </article>
+                                   </div>
+                                </li>
+                                <li class="reviews__item" data-linked-with="three">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/vas.png" alt="avatar" class="reviews__avatar-img">
+                                        </div>
+                                           <article class="reviews__content">
+                                               <h3 class="reviews__title">Устойчивость и безопасность</h3>
+                                               <div class="reviews__text">
+                                                  <p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!</p>
+                                               </div>
+                                               <div class="reviews__author">Василий Поперечный</div>
+                                            </article>
+                                       </div>
+                                    </li>
+                        </ul>
                     </div>
                     <ul class="reviews__switcher">
                         <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                            <a href="#" class="interactive-avatar__link">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girl1.png" alt="avatar" class="interactive-avatar__img">
+                            <a class="interactive-avatar__link" data-open="one">
+                                <img src="https://rudanastasia.github.io/surfboard/img/icons/girlactive.png" alt="avatar" class="interactive-avatar__img">
                             </a>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
-                            <a href="#" class="interactive-avatar__link">
+                            <a class="interactive-avatar__link" data-open="two">
                                 <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar" class="interactive-avatar__img">
                             </a>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
-                            <a href="#" class="interactive-avatar__link">
+                            <a class="interactive-avatar__link" data-open="three">
                                 <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar" class="interactive-avatar__img">
                             </a>
                         </li>
