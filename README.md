@@ -409,6 +409,7 @@
             </li>
         </ul>
     </nav>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js">
     <script src="./js/script.js"></script>
 </body>
 </html>
