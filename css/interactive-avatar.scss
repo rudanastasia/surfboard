@@ -7,7 +7,7 @@
     position: relative;
     cursor: pointer;
 
-    &--active {
+    &.active {
         border-color: #FEDB3F;
     }
 }
