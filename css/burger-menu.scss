@@ -1,4 +1,4 @@
-/*.menu__burger {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,4 +26,10 @@
     &:hover {
         color: #FFD517;
     }
-}*/
+}
+
+.modal__close {
+    position:absolute;
+    right: 100px;
+    top: 100px;
+}
