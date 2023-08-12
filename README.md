@@ -284,17 +284,17 @@
                     </div>
                     <ul class="reviews__switcher">
                         <li class="reviews-switcher__item active">
-                            <a class="reviews-switcher__link" data-open="one">
+                            <a href="" class="reviews-switcher__link" data-open="one">
                                 <img src="https://rudanastasia.github.io/surfboard/img/icons/girlactive.png" alt="avatar" class="reviews-switcher__img">
                             </a>
                         </li>
                         <li class="reviews-switcher__item">
-                            <a class="reviews-switcher__link" data-open="two">
+                            <a href="" class="reviews-switcher__link" data-open="two">
                                 <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar" class="reviews-switcher__img">
                             </a>
                         </li>
                         <li class="reviews-switcher__item">
-                            <a class="reviews-switcher__link" data-open="three">
+                            <a href="" class="reviews-switcher__link" data-open="three">
                                 <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar" class="reviews-switcher__img">
                             </a>
                         </li>
@@ -409,7 +409,7 @@
             </li>
         </ul>
     </nav>
-    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js">
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
