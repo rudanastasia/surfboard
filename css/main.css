@@ -865,7 +865,7 @@ img {
   border-radius: 10px;
 }
 
-.menu__burger {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -886,7 +886,7 @@ img {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .menu__burger {
+  .modal {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -903,25 +903,75 @@ img {
   color: #FFD517;
 }
 
+.modal__close {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
 .slider__all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .slider__all {
+    /*display: block;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.slaider__img {
+  max-width: none;
+}
+@media screen and (max-width: 768px) {
+  .slaider__img {
+    /*margin-left: 13%;*/
+  }
+}
 
 .slider__inner {
-  width: 45%;
+  /*width: 45%;*/
 }
 
 .slaider__param {
   margin-bottom: 1.875rem;
 }
+@media screen and (max-width: 768px) {
+  .slaider__param {
+    display: none;
+  }
+}
 
+/*.slaider__content {
+    @include tablets {
+        text-align: center;
+        margin-left: 87px;
+        width: 559px;
+    }
+}*/
 .slider__title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.75rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .slider__title {
+    text-align: center;
+  }
 }
 
 .slaider__desc {
@@ -935,6 +985,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slider__tech {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .tech__dl {
@@ -960,6 +1017,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slider__cust {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .slider__price {
