@@ -231,6 +231,115 @@
                     </ul>
                 </div>
             </section>
+            <section class="section__team">
+                <div class="container">
+                    <div class="team">
+                        <h2 class="section__title">Команда</h2>
+                        <ul class="team__list team__list--desktop">
+                            <li class="team__item team__item--desktop">
+                                <div class="team__avatar">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/boris.png" alt="avatar" class="team__avatar-img">
+                                </div>
+                                <button class="team__title" type="button">Борис Федорович</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                    <div class="team__spec">Главный технолог</div>
+                                    <div class="team__desc">Отвечает за материалы и разработку досок</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--desktop">
+                                <div class="team__avatar">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/olga.png" alt="avatar" class="team__avatar-img">
+                                </div>
+                                <button class="team__title" type="button">Ольга Невзорова</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                    <div class="team__spec">Дизайнер</div>
+                                    <div class="team__desc">Создает дизайн серфбордов</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--desktop">
+                                <div class="team__avatar">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/ingvar.png" alt="avatar" class="team__avatar-img">
+                                </div>
+                                <button class="team__title" type="button">Ингвар Нильсон</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                        <div class="team__spec">Спортсмен</div>
+                                        <div class="team__desc">Участвует в разработке серфбордов</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--desktop">
+                                <div class="team__avatar">
+                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/katerina.png" alt="avatar" class="team__avatar-img">
+                                </div>
+                                <button class="team__title" type="button">Екатерина Иванова</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                    <div class="team__spec">Тестировщик</div>
+                                    <div class="team__desc">Отвечает за разработку новых продуктов</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- mobile -->
+                        <ul class="team__list team__list--mobile">
+                            <li class="team__item team__item--mobile">
+                                <button class="team__title" type="button">Борис Федорович</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/boris.png" alt="avatar" class="team__avatar-img">
+                                        </div>
+                                    <div class="team__spec">Главный технолог</div>
+                                    <div class="team__desc">Отвечает за материалы и разработку досок</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--mobile">
+                                <button class="team__title" type="button">Ольга Невзорова</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/olga.png" alt="avatar" class="team__avatar-img">
+                                        </div>
+                                    <div class="team__spec">Дизайнер</div>
+                                    <div class="team__desc">Создает дизайн серфбордов</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--mobile">
+                                <button class="team__title" type="button">Ингвар Нильсон</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/ingvar.png" alt="avatar" class="team__avatar-img">
+                                        </div>
+                                        <div class="team__spec">Спортсмен</div>
+                                        <div class="team__desc">Участвует в разработке серфбордов</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item team__item--mobile">
+                                <button class="team__title" type="button">Екатерина Иванова</button>
+                                <div class="team__description">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/katerina.png" alt="avatar" class="team__avatar-img">
+                                        </div>
+                                    <div class="team__spec">Тестировщик</div>
+                                    <div class="team__desc">Отвечает за разработку новых продуктов</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <!-- mobile -->
+                    </div>
+                </div>
+            </section>
             <section class="section">
                 <div class="container">
                  <h2 class="section__title">Отзывы</h2>
@@ -410,6 +519,7 @@
         </ul>
     </nav>
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
