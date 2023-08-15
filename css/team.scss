@@ -1,0 +1,124 @@
+.section__team {
+    min-height: 27.625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    @include tablets {
+        padding-bottom: 6.25rem;
+        min-height: 22.625rem;
+    }
+
+}
+
+.team__list {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between; 
+}
+
+.team__list--desktop {
+    @include tablets {
+        display: none;
+    }
+
+}
+
+.team__list--mobile {
+    display: none;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10%;    
+    }
+    
+}
+
+.team__item {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    max-width: 14.44444rem;
+    position: relative;
+
+    @include tablets {
+        -webkit-box-flex: initial;
+        flex: initial;
+        margin-right: 0;
+    }
+}
+
+.team__item--mobile {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    max-width: 14.44444rem;
+    position: relative;
+    margin-top: 20px;
+}
+
+.team__item--mobile.active {
+    margin-bottom: 300px;
+}
+
+.team__title {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0;
+    background-color: white;
+    line-height: 25.22px;
+    font-weight: 700;
+}
+
+.team__title::after {
+    content: url(https://rudanastasia.github.io/surfboard/img/decor/arrow.svg);
+    position: relative;
+    margin-left: 10px;
+}
+
+.team__title::after.active {
+    content: url(https://rudanastasia.github.io/surfboard/img/decor/arrow1.svg);
+    position: absolute;
+    left: 175px;
+    padding-left: 7%;
+}
+
+.team__description {
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    transition: height .3s;
+    height: 0;
+}
+
+.team__content {
+    height: 300px;
+}
+
+.team__spec {
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.team__desc {
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 11px;
+}
