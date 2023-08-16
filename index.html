@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">-->
     <link rel="stylesheet" href="./css/main.css">
     <title>Surfboard</title>
 </head>
@@ -415,39 +416,40 @@
                 <div class="container">
                     <h2 class="section__title">Закажите доску</h2>
                     <form class="form">
+                        <input type="hidden" name="to" value="some@gmail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input input-error">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input input-error">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="street" class="form__input input-error">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="home" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="part" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="appartment" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="floor" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -455,7 +457,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -485,6 +487,16 @@
                     </form>
                 </div>
             </section>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href ="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
+            </div>
         </div>
     </div>
     <nav class="fixed-menu">
@@ -520,6 +532,7 @@
     </nav>
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
-</html>
+</html> 
