@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Surfboard</title>
 </head>
@@ -341,6 +341,58 @@
                     </div>
                 </div>
             </section>
+            <!--<section class="section products-menu-section">
+                <h1 class="section__title products-menu-section__title">Меню</h1>
+                <ul class="products-menu">
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title products-menu__title-longboard">Лонгборды</a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title products-menu__title-shortboard">Шортборды</a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title products-menu__title-softtop">Софттопы</a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>-->
+            <section class="products-menu-section">
+                <h1 class="section__title products-menu-section__title">Меню</h1>
+                <ul class="products-menu">
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title products-menu__title-longboard">
+                        <span class="menu-acco__trigger-text">Лонгборды</span>
+                        </a>
+                        <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title products-menu__title-shortboard">
+                        <span class="menu-acco__trigger-text">Шортборды</span>
+                        </a>
+                        <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title products-menu__title-softtop">
+                        <span class="menu-acco__trigger-text">Софттопы</span>
+                        </a>
+                        <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
+                    </li>
+                </ul>
+            </section>
             <section class="section">
                 <div class="container">
                  <h2 class="section__title">Отзывы</h2>
@@ -431,7 +483,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" name="street" class="form__input input-error">
+                                    <input type="text" name="street" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
@@ -457,7 +509,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea input-error"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
