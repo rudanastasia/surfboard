@@ -1,0 +1,126 @@
+.products-menu-section {
+    position: relative;
+    color: white;
+    background: url(https://rudanastasia.github.io/surfboard/img/decor/surfmenu.jpg) center top no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 652px;
+    margin-bottom: 30px;
+}
+
+.products-menu {
+    /*position: absolute;*/
+    right: 85px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+}
+
+.products-menu-section__title {
+    /*position: relative;
+    display: flex;
+    padding: 50px;
+    top: -257px;*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.products-menu__item {
+    display: flex;
+    height: 100%;
+}
+
+.products-menu__title {
+    /*position: relative;
+    width: 100px;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    display: flex;*/
+    position: relative;
+    width: 80px;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+
+.menu-acco__trigger-text {
+    position: absolute;
+    left: 50%;
+    bottom: 86px;
+    transform: rotate(-90deg) translate(-50%, -50%);
+    transform-origin: 0 0;
+    white-space: nowrap; 
+}
+
+.products-menu__content {
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+    opacity: 90%;
+    background: #333537;
+}
+
+.products-menu__container {
+    padding: 40px 73px 45px 26px;
+}
+
+.products-menu__content-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.99px;
+    width: 0;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    transition: width .7s;
+    opacity: 90%;
+    background: #333537;
+    left: 20%;
+}
+
+.products-menu__close {
+    position: absolute;
+    top: 28px;
+    right: 25px;
+    border: none;
+    background: transparent;
+}
+
+.products-menu__item_active {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .products-menu__item_active > .products-menu__content-text {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 90%;
+    z-index: 10;
+    margin-left: 270px;
+
+    @include tablets {
+        margin-left: 0px;
+        width: 50%;
+    }
+
+    @include phones {
+        width: 64%;
+        margin-left: 0px;
+    }
+  }
+  
+  
