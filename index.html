@@ -47,39 +47,37 @@
                                 </span>
                                 <span class="phone-number__text">8 800 903 90 90</span>
                             </a>
-                            <div class="open-modal">
-                            <a href="" class="hamburger">
+                            <div class="hamburger">
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
-                            </a>
                             </div>
-                            <!--<div class="modal">
                             <div class="modal">
                                 <ul class="menu__burger__list">
-                                    <li class="menu__burger__item">
+                                    <li class="menu__burger__elem">
                                         <a href="#" class="menu__burger__link">О нас</a>
                                     </li>
-                                    <li class="menu__burger__item">
+                                    <li class="menu__burger__elem">
                                         <a href="#" class="menu__burger__link">Серфборды</a>
                                     </li>
-                                    <li class="menu__burger__item">
+                                    <li class="menu__burger__elem">
                                         <a href="#" class="menu__burger__link">Команда</a>
                                     </li>
-                                    <li class="menu__burger__item">
+                                    <li class="menu__burger__elem">
                                         <a href="#" class="menu__burger__link">Меню</a>
                                     </li>
-                                    <li class="menu__burger__item">
+                                    <li class="menu__burger__elem">
                                         <a href="#" class="menu__burger__link">Отзывы</a>
                                     </li>
-                                    <li class="menu__burger__item">
+                                    <li class="menu__burger__elem">
                                         <a href="#" class="menu__burger__link">Как мы работаем</a>
                                     </li>
-                                    <li class="menu__burger__item">
+                                    <li class="menu__burger__elem">
                                         <a href="#" class="menu__burger__link">Контакты</a>
                                     </li>
                                 </ul>
-                            </div>-->
+                                <div class="modal__close">X</div>
+                            </div>
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для 
@@ -541,16 +539,19 @@
             </section>
         </div>
     </div>
-    <div id="modal" class="modal">
-        <div class="modal__container">
-            <div class="modal__content">
+    <div id="modale" class="modale">
+        <div class="modale__container">
+            <div class="modale__content">
                 Сообщение отправлено
             </div>
-            <div class="modal__button-container">
+            <div class="modale__button-container">
                 <a href ="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
             </div>
         </div>
     </div>
+    <section class="section map-section">
+        <div id="map"></div>
+      </section>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active">
@@ -582,9 +583,10 @@
             </li>
         </ul>
     </nav>
-    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=08c5f0d6-8f9c-46dd-9597-0fa0e2a4efca&lang=ru_RU"></script>
     <script src="./js/script.js"></script>
 </body>
 </html> 
