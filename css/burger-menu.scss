@@ -12,9 +12,9 @@
     text-align: center;
     display: none;
 
-    @include tablets {
+    /*@include tablets {
         display: inline-flex;
-    }
+    }*/
 }
 
 .menu__burger__link {
