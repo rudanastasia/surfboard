@@ -22,6 +22,7 @@
     font-size: 36px;
     line-height: 72px;
     text-align: center;
+    font-weight: 400;
 
     &:hover {
         color: #FFD517;
@@ -30,6 +31,6 @@
 
 .modal__close {
     position:absolute;
-    right: 100px;
-    top: 100px;
+    right: 20px;
+    top: 30px;
 }
