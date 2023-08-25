@@ -39,7 +39,7 @@
                                     <a href="#" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
-                            <div class="modal__close">x</div>
+                            <div class="modal__close"></div>
                         </nav>    
                             <a href="tel:+78009039090" class="phone-number header__phone-number">
                                 <span class="phone-number__icon">
@@ -76,7 +76,7 @@
                                         <a href="#" class="menu__burger__link">Контакты</a>
                                     </li>
                                 </ul>
-                                <div class="modal__close">X</div>
+                                <div class="modal__close"><img src="https://rudanastasia.github.io/surfboard/img/icons/close.png" class="menu-close" alt="close"></div>
                             </div>
                     </header>
                     <div class="hero__title-section">
@@ -462,6 +462,29 @@
                  </div>
                 </div>
             </section>
+            <section class="section player-section">
+                <div class="container">
+                    <h2 class="section__title headline__title">Как мы работаем</h2>
+                    <div class="player-section__container">
+                        <div class="player">
+                          <div class="player__wrapper">
+                            <div id="yt-player" class="player__elem"></div>
+                            <div class="player__splash"></div>
+                          </div>
+                          <div class="player__controls">
+                            <button class="player__start"></button>
+                            <div class="player__playback">
+                              <button class="player__playback-button"></button>
+                            </div>
+                            <div class="player__duration">
+                              <span class="player__duration-completed">0:00</span> :
+                              <span class="player__duration-estimate">0:00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
             <section class="section order-section section--font-color--white">
                 <div class="container">
                     <h2 class="section__title">Закажите доску</h2>
@@ -587,6 +610,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=08c5f0d6-8f9c-46dd-9597-0fa0e2a4efca&lang=ru_RU"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./js/script.js"></script>
 </body>
 </html> 
