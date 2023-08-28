@@ -444,6 +444,7 @@ img {
 
 .section.map-section {
   width: 100%;
+  height: 300px;
 }
 
 .headline {
@@ -848,7 +849,7 @@ img {
   display: none;
 }
 
-.modale.open {
+.modale-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,6 +899,96 @@ img {
 .body_closed {
   height: 100%;
   overflow: hidden;
+}
+
+/*#myBtn {
+    background-color: #9C27B0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+  }*/
+.modale {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #333537;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 21px;
+  width: 50%;
+  height: 170px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  margin-bottom: 20px;
+  color: black;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #9C27B0;
+  color: white;
 }
 
 .radio {
@@ -1267,6 +1358,69 @@ img {
   display: none;
 }
 
+.param-long {
+  background: #d5d5d5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  padding: 30px;
+  position: absolute;
+  left: 512px;
+  top: 0px;
+  border-radius: 2%;
+  display: none;
+}
+
+.long {
+  margin-right: 20px;
+}
+
+.st {
+  margin-left: 25px;
+}
+
+.st-dlina:before {
+  content: url(https://rudanastasia.github.io/surfboard/img/icons/length.png);
+  position: absolute;
+  top: 32px;
+  left: 12px;
+}
+
+.st-shirina:before {
+  content: url(https://rudanastasia.github.io/surfboard/img/icons/width.png);
+  position: absolute;
+  left: 12px;
+  top: 69px;
+}
+
+.st-tolshina:before {
+  content: url(https://rudanastasia.github.io/surfboard/img/icons/thickness.png);
+  position: absolute;
+  left: 12px;
+}
+
+.st-srok:before {
+  content: url(https://rudanastasia.github.io/surfboard/img/icons/lifetime.png);
+  position: absolute;
+  left: 12px;
+}
+
+.st-ves:before {
+  content: url(https://rudanastasia.github.io/surfboard/img/icons/weight.png);
+  position: absolute;
+  left: 12px;
+}
+
+.hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section__team {
   min-height: 35.625rem;
   display: -webkit-box;
@@ -1549,6 +1703,18 @@ img {
   }
 }
 
+.products-menu__title-longboard {
+  background: url(https://rudanastasia.github.io/surfboard/img/decor/long.png);
+}
+
+.products-menu__title-shortboard {
+  background: url(https://rudanastasia.github.io/surfboard/img/decor/short.png);
+}
+
+.products-menu__title-softtop {
+  background: url(https://rudanastasia.github.io/surfboard/img/decor/soft.png);
+}
+
 .player-section {
   background: #F8FAF9;
   margin-bottom: 0;
@@ -1664,4 +1830,194 @@ img {
           transform: translate(-50%, -50%);
   background: #626262;
   margin-left: 90px;
+}
+
+.footer__container {
+  position: relative;
+}
+
+.footer-container__content {
+  margin-top: 50px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px 0;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    display: block;
+    margin-left: 127px;
+  }
+}
+
+.footer-container__section {
+  height: 140px;
+  margin-top: 12px;
+}
+
+.dropdown__footer {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  color: #9A9A9A;
+  margin-left: 28px;
+  margin-bottom: 5px;
+  padding-top: 7px;
+}
+
+.socials {
+  margin-left: 449px;
+  margin-top: 7px;
+}
+@media screen and (max-width: 768px) {
+  .socials {
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .socials {
+    margin-left: 25px;
+  }
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  height: 36px;
+  background: center center no-repeat;
+  position: relative;
+  width: 36px;
+}
+
+.socials__item--icon--telegram .socials__link {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/vk.png");
+}
+
+.socials__item--icon--telegram .socials__link:hover {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/vk.png");
+}
+
+.socials__item--icon--vk .socials__link {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/f.png");
+}
+
+.socials__item--icon--vk .socials__link:hover {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/f.png");
+}
+
+.socials__item--icon--facebook .socials__link {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/in.png");
+}
+
+.socials__item--icon--facebook .socials__link:hover {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/in.png");
+}
+
+.socials__item--icon--instagram .socials__link {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/tv.png");
+}
+
+.socials__item--icon--instagram .socials__link:hover {
+  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/tv.png");
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.contacts__footer {
+  position: relative;
+  height: 35px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__footer:hover {
+  color: #F5170E;
+}
+
+.footer__phone-number {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__phone-number:before {
+  background-image: url(https://rudanastasia.github.io/surfboard/img/icons/phone.svg);
+  content: url(https://rudanastasia.github.io/surfboard/img/icons/phone.svg);
+}
+
+.menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px;
+  padding-top: 5px;
+}
+@media screen and (max-width: 480px) {
+  .menu-footer {
+    margin: 0 7px;
+  }
+}
+
+.menu-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*margin-right: 4.5rem;*/
+  font-weight: bold;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+}
+
+.menu-footer__item {
+  margin-right: 0.9375rem;
+  margin-bottom: 10px;
+}
+.menu-footer__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .menu-footer__item:last-child {
+    margin-left: 34px;
+  }
 }
