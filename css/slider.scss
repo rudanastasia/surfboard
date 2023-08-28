@@ -174,3 +174,62 @@
   .bx-wrapper .bx-controls-direction a.disabled {
     display: none;
   }
+
+  .param-long {
+    background: #d5d5d5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    display: flex;
+    width: 30%;
+    padding: 30px;
+    position: absolute;
+    left: 512px;
+    top: 0px;
+    border-radius: 2%;
+    display: none;
+  }
+
+.long {
+    margin-right: 20px;
+  }
+
+.st {
+    margin-left: 25px;
+}
+
+.st-dlina:before {
+   content: url(https://rudanastasia.github.io/surfboard/img/icons/length.png);
+   position: absolute;
+   top: 32px;
+   left: 12px;
+}
+
+.st-shirina:before {
+   content: url(https://rudanastasia.github.io/surfboard/img/icons/width.png);
+   position: absolute;
+   left: 12px;
+   top: 69px;
+}
+
+.st-tolshina:before {
+   content: url(https://rudanastasia.github.io/surfboard/img/icons/thickness.png);
+   position: absolute;
+   left: 12px;
+}
+
+.st-srok:before {
+   content: url(https://rudanastasia.github.io/surfboard/img/icons/lifetime.png);
+   position: absolute;
+   left: 12px;
+}
+
+.st-ves:before {
+   content: url(https://rudanastasia.github.io/surfboard/img/icons/weight.png);
+   position: absolute;
+   left: 12px;
+}
+
+.hidden {
+    display: flex; 
+}
