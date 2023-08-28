@@ -136,17 +136,17 @@ $('.form').submit(e => {
         }
     });
 
-    $.fancybox.open({
+    /*$.fancybox.open({
         src: "#modale",
         type: "inline"
-    })
+    })*/
 });
 
-$(".app-submit-btn").click(e => {
+/*$(".app-submit-btn").click(e => {
     e.preventDefault();
 
     $.fancybox.close();
-})
+})*/
 
 /////////////////////////////////products
 /*const mesureWidth = item => {
@@ -403,3 +403,50 @@ function onYouTubeIframeAPIReady() {
 }
  
 eventsInit();
+
+
+//////
+var modal = document.getElementById('myModal');
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("btn");
+
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+    e.preventDefault();
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+/////param
+/*const showParam = $('.slaider__param');
+const closeParam = $('.modal__close');
+
+showParam.on('click', (e) => {
+    e.preventDefault()
+    $('.param-long').show()
+ });
+
+ closeParam.on('click', (e) => {
+    e.preventDefault()
+    $('.modal').hide()
+ });*/
+
+ $(".slaider__param").click(function () {
+    $(".param-long").toggleClass("hidden");
+    });
