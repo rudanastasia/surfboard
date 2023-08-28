@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">-->
     <link rel="stylesheet" href="./css/main.css">
     <title>Surfboard</title>
 </head>
@@ -165,9 +165,25 @@
                         <div class="slaider__img">
                            <img src="https://rudanastasia.github.io/surfboard/img/decor/surf1.png" alt="photo" class="slaider__img">
                         </div>
-                        <div class="slider__inner">
+                        <div id="close" class="slider__inner">
                            <div class="slaider__param">
                                 <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo" class="param__img">
+                           </div>
+                           <div id="hidden" class="param-long">
+                            <ul class="long">
+                                <li class="st st-dlina">Длина доски</li>
+                                <li class="st st-shirina">Ширина доски</li>
+                                <li class="st st-tolshina">Толщина</li>
+                                <li class="st st-srok">Срок службы</li>
+                                <li class="st st-ves">Вес</li>
+                            </ul>
+                            <ul class="long-zn">
+                                <li class="st">от 2,5 м</li>
+                                <li class="st">от 40 см</li>
+                                <li class="st">8 см</li>
+                                <li class="st">5 лет</li>
+                                <li class="st">7-8 кг</li>
+                            </ul>
                            </div>
                                 <div class="slaider__content">
                                     <h2 class="slider__title">Лонгборд 2.0</h2>
@@ -201,6 +217,22 @@
                         <div class="slider__inner">
                            <div class="slaider__param">
                                 <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo" class="param__img">
+                           </div>
+                           <div id="hidden" class="param-long">
+                            <ul class="long">
+                                <li class="st st-dlina">Длина доски</li>
+                                <li class="st st-shirina">Ширина доски</li>
+                                <li class="st st-tolshina">Толщина</li>
+                                <li class="st st-srok">Срок службы</li>
+                                <li class="st st-ves">Вес</li>
+                            </ul>
+                            <ul class="long-zn">
+                                <li class="st">от 1,5 м</li>
+                                <li class="st">от 30 см</li>
+                                <li class="st">8 см</li>
+                                <li class="st">5 лет</li>
+                                <li class="st">7-8 кг</li>
+                            </ul>
                            </div>
                                 <div class="slaider__content">
                                     <h2 class="slider__title">Шортборд</h2>
@@ -553,7 +585,7 @@
                                 </label>
                             </div>
                             <div class="form__btns">
-                                <input type="submit" value="Заказать" class="btn btn--theme--yellow">
+                                <input type="submit" id="myBtn" value="Заказать" class="btn btn--theme--yellow">
                                 <input type="reset" value="Очистить" class="btn btn--theme--transparent">
                             </div>
                         </div>
@@ -562,7 +594,7 @@
             </section>
         </div>
     </div>
-    <div id="modale" class="modale">
+    <!--<div id="modale" class="modale">
         <div class="modale__container">
             <div class="modale__content">
                 Сообщение отправлено
@@ -571,10 +603,60 @@
                 <a href ="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
             </div>
         </div>
+    </div>-->
+
+    <!--<button id="myBtn">Открыть окно</button>-->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <!--<h2>Шапка модального окна</h2>-->
+        </div>
+        <div class="modal-body">
+          <p>Сообщение отправлено</p>
+        </div>
+        <!--<div class="modal-footer">
+          <h3>Футер модального окна</h3>
+        </div>-->
+        <div class="modale__button-container">
+            <a href ="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
+        </div>
+      </div>
     </div>
+
     <section class="section map-section">
         <div id="map"></div>
       </section>
+      <footer class="footer__container">
+        <div class="container footer-container__content">
+            <div class="footer">
+                <nav class="menu-footer">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                            Москва, ул.Новый Арбат, д.31/12
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="tel:+78009039090" class="footer__phone-number">8 800 903 90 90</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="socials">
+                    <li class="socials__item socials__item--icon--telegram">
+                        <a href="#" class="socials__link"></a>
+                    </li>
+                    <li class="socials__item socials__item--icon--vk">
+                        <a href="#" class="socials__link"></a>
+                    </li>
+                    <li class="socials__item socials__item--icon--facebook">
+                        <a href="#" class="socials__link"></a>
+                    </li>
+                    <li class="socials__item socials__item--icon--instagram">
+                        <a href="#" class="socials__link"></a>
+                    </li>
+                </ul>                    
+            </div>
+        </div>
+    </footer>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active">
