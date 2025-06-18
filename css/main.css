@@ -1836,10 +1836,6 @@ img {
   position: relative;
 }
 
-.footer-container__content {
-  margin-top: 50px;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

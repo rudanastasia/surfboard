@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.footer-container__content {
-    margin-top: 50px;
-}
-
 .footer {
     display: flex;
     align-items: center;
@@ -66,35 +62,35 @@
 }
  
 .socials__item--icon--telegram .socials__link {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/vk.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-vk.png");
 }
     
 .socials__item--icon--telegram .socials__link:hover {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/vk.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-vk-hover.png");
 }
 
 .socials__item--icon--vk .socials__link {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/f.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-facebook.png");
 }
     
 .socials__item--icon--vk .socials__link:hover {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/f.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-facebook-hover.png");
 }
     
 .socials__item--icon--facebook .socials__link {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/in.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-instagram.png");
 }
     
 .socials__item--icon--facebook .socials__link:hover {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/in.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-instagram-hover.png");
 }
     
 .socials__item--icon--instagram .socials__link {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/tv.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-twitter.png");
 }
     
 .socials__item--icon--instagram .socials__link:hover {
-    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/tv.png");
+    background-image: url("http://rudanastasia.github.io/surfboard/img/icons/icon-twitter-hover.png");
 }
 
 .contacts {
