@@ -1,0 +1,122 @@
+.footer {
+    display    : flex;
+    align-items: center;
+    padding    : 35px 0;
+    position   : relative;
+    width      : 100%;
+
+    @include phones {
+        display    : block;
+        margin-left: 127px;
+    }
+}
+
+.menu-footer {
+    display    : flex;
+    padding-top: 5px;
+
+    @include phones {
+        margin: 0 7px;
+    }
+}
+
+.menu-footer__list {
+    align-items    : center;
+    font-weight    : 400;
+    flex-wrap      : wrap;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.menu-footer__item {
+    margin-right : 0.9375rem;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-right: 0;
+
+        @include phones {
+            margin-left: 34px;
+        }
+    }
+}
+
+.footer__phone-number {
+    font-size        : 1.5rem;
+    text-decoration  : none;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+
+    &:hover {
+        color: #FFD517;
+;
+    }
+}
+
+.socials {
+    margin-left: 449px;
+    margin-top : 7px;
+
+    @include tablets {
+        margin-left: 250px;
+    }
+
+    @include phones {
+        margin-left: 25px;
+    }
+}
+
+.socials__item {
+    display       : inline-block;
+    vertical-align: middle;
+    margin-right  : 5px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    display        : block;
+    text-decoration: none;
+    height         : 36px;
+    background     : center center no-repeat;
+    position       : relative;
+    width          : 36px;
+}
+
+.socials__item--icon--telegram .socials__link {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-vk.png");
+}
+
+.socials__item--icon--telegram .socials__link:hover {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-vk-hover.png");
+}
+
+.socials__item--icon--vk .socials__link {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-facebook.png");
+}
+
+.socials__item--icon--vk .socials__link:hover {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-facebook-hover.png");
+}
+
+.socials__item--icon--facebook .socials__link {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-instagram.png");
+}
+
+.socials__item--icon--facebook .socials__link:hover {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-instagram-hover.png");
+}
+
+.socials__item--icon--instagram .socials__link {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-twitter.png");
+}
+
+.socials__item--icon--instagram .socials__link:hover {
+    background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-twitter-hover.png");
+}
+

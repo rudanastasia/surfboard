@@ -68,11 +68,6 @@ p {
   margin: 0;
 }
 
-footer {
-  position: relative;
-  width: 100%;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -272,51 +267,6 @@ img {
 .menu__link {
   text-decoration: none;
   white-space: nowrap;
-}
-@media screen and (max-width: 768px) {
-  .menu__link {
-    text-decoration: none;
-    font-size: 36px;
-    line-height: 72px;
-    text-align: center;
-  }
-  .menu__link:hover {
-    color: #FFD517;
-  }
-}
-
-.modal__close {
-  position: absolute;
-  right: 100px;
-  top: 100px;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #333537;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 1;
-  text-align: center;
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .modal {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
 }
 
 .features {
@@ -1832,10 +1782,6 @@ img {
   margin-left: 90px;
 }
 
-.footer__container {
-  position: relative;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1844,6 +1790,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 35px 0;
+  position: relative;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -1852,20 +1800,57 @@ img {
   }
 }
 
-.footer-container__section {
-  height: 140px;
-  margin-top: 12px;
+.menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+}
+@media screen and (max-width: 480px) {
+  .menu-footer {
+    margin: 0 7px;
+  }
 }
 
-.dropdown__footer {
-  font-family: "Open Sans";
-  font-style: normal;
+.menu-footer__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 400;
-  font-size: 11px;
-  color: #9A9A9A;
-  margin-left: 28px;
-  margin-bottom: 5px;
-  padding-top: 7px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.menu-footer__item {
+  margin-right: 0.9375rem;
+  margin-bottom: 10px;
+}
+.menu-footer__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .menu-footer__item:last-child {
+    margin-left: 34px;
+  }
+}
+
+.footer__phone-number {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer__phone-number:hover {
+  color: #FFD517;
 }
 
 .socials {
@@ -1903,117 +1888,33 @@ img {
 }
 
 .socials__item--icon--telegram .socials__link {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/vk.png");
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-vk.png");
 }
 
 .socials__item--icon--telegram .socials__link:hover {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/vk.png");
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-vk-hover.png");
 }
 
 .socials__item--icon--vk .socials__link {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/f.png");
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-facebook.png");
 }
 
 .socials__item--icon--vk .socials__link:hover {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/f.png");
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-facebook-hover.png");
 }
 
 .socials__item--icon--facebook .socials__link {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/in.png");
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-instagram.png");
 }
 
 .socials__item--icon--facebook .socials__link:hover {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/in.png");
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-instagram-hover.png");
 }
 
 .socials__item--icon--instagram .socials__link {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/tv.png");
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-twitter.png");
 }
 
 .socials__item--icon--instagram .socials__link:hover {
-  background-image: url("http://rudanastasia.github.io/surfboard/img/icons/tv.png");
-}
-
-.contacts {
-  margin-left: auto;
-}
-
-.contacts__footer {
-  position: relative;
-  height: 35px;
-  text-decoration: none;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacts__footer:hover {
-  color: #F5170E;
-}
-
-.footer__phone-number {
-  font-size: 1.5rem;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.footer__phone-number:before {
-  background-image: url(https://rudanastasia.github.io/surfboard/img/icons/phone.svg);
-  content: url(https://rudanastasia.github.io/surfboard/img/icons/phone.svg);
-}
-
-.menu-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 30px;
-  padding-top: 5px;
-}
-@media screen and (max-width: 480px) {
-  .menu-footer {
-    margin: 0 7px;
-  }
-}
-
-.menu-footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*margin-right: 4.5rem;*/
-  font-weight: bold;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: block;
-}
-
-.menu-footer__item {
-  margin-right: 0.9375rem;
-  margin-bottom: 10px;
-}
-.menu-footer__item:last-child {
-  margin-right: 0;
-}
-@media screen and (max-width: 480px) {
-  .menu-footer__item:last-child {
-    margin-left: 34px;
-  }
+  background-image: url("https://rudanastasia.github.io/surfboard/img/icons/icon-twitter-hover.png");
 }

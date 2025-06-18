@@ -16,25 +16,25 @@ body {
 }
 
 body {
-    line-height: 1.42;
-    -webkit-font-smoothing: antialiased;
+    line-height            : 1.42;
+    -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+    position               : relative;
+    font-family            : "Alegreya Sans", Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    position  : relative;
+    width     : 100%;
+    overflow  : hidden;
     min-height: 100%;
 }
 
 .container {
-    width: 95%;
+    width    : 95%;
     max-width: $containerWidth;
-    margin: 0 auto;
-    position: relative;
+    margin   : 0 auto;
+    position : relative;
 }
 
 h1,
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+    margin-top : 0;
     font-weight: normal;
 }
 
@@ -53,7 +53,8 @@ table {
 
 ul {
     padding: 0;
-    margin: 0;
+    margin : 0;
+
     li {
         list-style: none;
     }
@@ -61,12 +62,7 @@ ul {
 
 p {
     padding: 0;
-    margin: 0;
-}
-
-footer {
-    position: relative;
-    width: 100%;
+    margin : 0;
 }
 
 * {
@@ -78,6 +74,6 @@ a {
 }
 
 img {
-    display: block;
+    display  : block;
     max-width: 100%;
 }
