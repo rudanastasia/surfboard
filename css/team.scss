@@ -1,50 +1,16 @@
-.section__team {
-    min-height: 35.625rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-    @include tablets {
-        padding-bottom: 6.25rem;
-        min-height: 22.625rem;
-    }
-
-}
-
-.team__list {
+.team {
+  &__list {
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between; 
-}
-
-.team__list--desktop {
-    @include tablets {
-        display: none;
-    }
-
-}
-
-.team__list--mobile {
-    display: none;
+    justify-content: space-between;
 
     @include tablets {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 10%;    
+      flex-direction: column;
+      align-items: center;
     }
-    
-}
+  }
 
-.team__item {
-    -webkit-box-flex: 1;
+  &__item {
     flex: 1;
     text-align: center;
     margin-right: 20px;
@@ -52,73 +18,88 @@
     position: relative;
 
     @include tablets {
-        -webkit-box-flex: initial;
-        flex: initial;
-        margin-right: 0;
+      flex: initial;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-}
 
-.team__item--mobile {
-    -webkit-box-flex: 1;
-    flex: 1;
-    text-align: center;
-    margin-right: 20px;
-    max-width: 14.44444rem;
-    position: relative;
-    margin-top: 20px;
-}
+    &.active .team__avatar {
+      @include tablets {
+        display: block;
+        margin-top: 20px;
+      }
+    }
+  }
 
-.team__item--mobile.active {
-    margin-bottom: 300px;
-}
+  &__avatar {
+    @include tablets {
+      order: 2;
+      display: none;
+    }
+  }
 
-.team__title {
+  &__title {
     display: inline-flex;
-    -webkit-box-align: center;
     align-items: center;
     border: 0;
-    background-color: white;
-    line-height: 25.22px;
+    background-color: $white;
+    color: $black;
     font-weight: 700;
-}
+    font-size: 21px;
+    margin-top: 20px;
 
-.team__title::after {
-    content: url(https://rudanastasia.github.io/surfboard/img/decor/arrow.svg);
-    position: relative;
-    margin-left: 10px;
-}
+    @include tablets {
+      order: 1;
+    }
 
-.team__title::after.active {
-    content: url(https://rudanastasia.github.io/surfboard/img/decor/arrow1.svg);
-    position: absolute;
-    left: 175px;
-    padding-left: 7%;
-}
+    &::after {
+      content: url(../img/icons/arrow-btn.svg);
+      position: relative;
+      margin-left: 10px;
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+  }
 
-.team__description {
-    position: absolute;
-    top: 100%;
+  &__description {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0fr;
     overflow: hidden;
-    transition: height .3s;
-    height: 0;
-}
+    transition: grid-template-rows 0.3s ease;
 
-.team__content {
-    height: 360px;
-}
+    @include tablets {
+      order: 3;
+    }
+  }
 
-.team__spec {
-    font-size: 18px;
-    line-height: 21.6px;
-    text-align: center;
-    font-weight: 400;
+  &__item.active &__description {
+    grid-template-rows: 1fr;
+  }
+
+  &__item.active &__title::after {
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  &__spec {
+    color: $black;
     margin-top: 10px;
-}
 
-.team__desc {
-    font-size: 18px;
-    line-height: 21.6px;
-    text-align: center;
+    @include tablets {
+      font-weight: bold;
+    }
+  }
+
+  &__desc {
+    color: $grey;
     font-weight: 300;
-    margin-top: 11px;
+    margin: 11px 0 20px;
+  }
 }

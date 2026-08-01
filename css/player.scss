@@ -1,108 +1,148 @@
 .player-section {
-    background: #F8FAF9; 
-    margin-bottom: 0;
+  background: $white-dark;
+  margin-bottom: 0;
 }
 
 .player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &__wrapper {
     position: relative;
-    display: block;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  &__elem {
     width: 100%;
     height: 100%;
+  }
 
-    /*&.active .player__splash {
-        display: none;
-    }*/
+  &__splash {
+    position: absolute;
+    inset: 0;
+    @extend %flex-center;
+    background: url('https://img.youtube.com/vi/LXb3EKWsInQ/maxresdefault.jpg') center center /
+      cover no-repeat;
+    cursor: pointer;
+    transition: opacity 0.3s;
 
-    /*&.paused {
-        .player__start {
-            width: 14px;
-            height: 22px;
-            border: none;
+    &::before {
+      content: '';
+      box-sizing: content-box;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 0 25px 40px;
+      border-color: transparent transparent transparent $white;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+    }
+  }
 
-            &:after,
-            &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                width: 5px;
-                top: 0;
-                bottom: 0;
-                background: #626262;
-            }
+  &.active &__splash {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
-            &:after {
-                right: 0;
-            }
+  &__controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background: $dark-grey;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
 
-            &:before {
-                left: 0;
-            }
-        }
-    }*/
-}
+    @include tablets {
+      gap: 8px;
+      padding: 0 12px;
+    }
+  }
 
-.player__splash {
+  &__start {
+    position: relative;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      box-sizing: content-box;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 16px;
+      border-color: transparent transparent transparent $white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &.paused &__start {
+    &::before {
+      width: 5px;
+      height: 20px;
+      border: none;
+      background: $white;
+    }
+
+    &::after {
+      display: block;
+      left: 11px;
+      width: 5px;
+      height: 20px;
+      background: $white;
+    }
+  }
+
+  &__playback {
+    position: relative;
+    flex: 1;
+    background-color: $grey;
+    height: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__playback-progress {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
-    cursor: pointer;
-}
-
-.player__controls {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 35px;
-    background: #404040;
-    display: flex;
-    padding: 0 25px;
-    justify-content: space-between;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-box-align: center;
-}
-
-.player__start {
-    /*border: 0;
-  background: transparent;
-  box-sizing: border-box;
-  width: 0;
-  height: 74px;
-
-  border-color: transparent transparent transparent #FFFFFF;
-  transition: 100ms all ease;
-  cursor: pointer;
-
-  // play state
-  border-style: solid;
-  border-width: 37px 0 37px 60px;*/
-
-  display: inline-block;
-  border: 12px solid transparent;
-  border-left: 19px solid white;
-  background: transparent;
-
-  &.paused {
-    border-style: double;
-    border-width: 0px 0 0px 60px;
+    width: 0%;
+    background: $yellow;
+    border-radius: 5px;
+    pointer-events: none;
   }
 
-  &:hover {
-    border-color: transparent transparent transparent #FFFFFF;
-  }
-}
-
-.player__playback {
-    background-color: #626262;
-    height: 9px;
-    width: 702px;
-}
-
-.player__playback-button {
-    border-radius: 50px;
+  &__playback-button {
+    border-radius: 50%;
     border: none;
     width: 12px;
     height: 12px;
@@ -111,6 +151,55 @@
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%);
-    background: #626262;
-    margin-left: 90px;
+    background: $yellow;
+  }
+
+  &__mute {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M3 9v6h4l5 5V4L7 9H3z'/%3E%3C/svg%3E")
+      center / contain no-repeat;
+    cursor: pointer;
+  }
+
+  &__volume {
+    position: relative;
+    flex-shrink: 0;
+    width: 90px;
+    background-color: $grey;
+    height: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    @include tablets {
+      width: 60px;
+    }
+  }
+
+  &__volume-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    background: $yellow;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+
+  &__volume-button {
+    border-radius: 50%;
+    border: none;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background: $yellow;
+  }
 }

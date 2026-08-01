@@ -1,44 +1,29 @@
-$containerWidth: 940px;
-$baseFontSize: 18px;
-
-
-//breakpoints
-$tablets: 768px;
-$phones: 480px;
-
-
-//colors
-$blue: #61c4d9;
-$darkGreen: #0b4d3c;
-
-//z-index
-$z-fixed-menu: 100;
-
-@import "media";
-
 //normalize
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 
 //setups
+@import '_variables';
+@import '_placeholders';
+@import 'media';
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import "layout";
-@import "hero";
-@import "header";
-@import "features";
-@import "btn";
-@import "section";
-@import "headline";
-@import "benefits";
-@import "benefit";
-@import "reviews";
-@import "interactive-avatar";
-@import "form";
-@import "radio";
-@import "fixed-menu";
-@import "hamburger";
-@import "burger-menu";
-@import "slider";
-@import "team";
-@import "products";
-@import "player";
-@import "footer";
+@import 'layout';
+@import 'hero';
+@import 'header';
+@import 'hamburger';
+@import 'btn';
+@import 'features';
+@import 'section';
+@import 'benefits';
+@import 'benefit';
+@import 'slider';
+@import 'team';
+@import 'products';
+@import 'reviews';
+@import 'interactive-avatar';
+@import 'player';
+@import 'form';
+@import 'radio';
+@import 'footer';
+@import 'map';
+@import 'fixed-menu';
+@import 'burger-menu';

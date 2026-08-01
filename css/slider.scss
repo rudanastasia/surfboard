@@ -1,235 +1,251 @@
-.slider__all {
+.slider {
+  &__all {
     display: flex;
     width: 100%;
     overflow: hidden;
     position: relative;
-    left: 0px;
-    transition: .5s;
+    left: 0;
+    transition: 0.5s;
 
     @include tablets {
-        /*display: block;*/
-        display: flex;
-        width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        text-align: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+      display: flex;
+      width: 100%;
+      text-align: center;
+      align-items: center;
     }
-}
+  }
 
-.slider__item {
+  &__item {
     display: flex;
     flex-shrink: 0;
     width: 100%;
 
     @include tablets {
-    /* display: block; */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
     }
-}
+  }
 
-.slaider__img {
-    max-width: none !important;
+  &__img {
+    position: relative;
+    z-index: 1;
 
-    @include tablets {
-        /*margin-left: 13%;*/
+    &::before {
+      content: url('../img/icons/board-background.svg');
+      @extend %center-absolute;
+      z-index: -1;
     }
-}
+  }
 
-.slider__inner {
-    /*width: 45%;*/
-}
+  &__image {
+    max-width: none;
+    width: 419px;
+    height: 538px;
+  }
 
-.slaider__param {
+  &__param {
     margin-bottom: 1.875rem;
-
-    @include tablets {
-        display: none;
-    }
-}
-
-/*.slaider__content {
-    @include tablets {
-        text-align: center;
-        margin-left: 87px;
-        width: 559px;
-    }
-}*/
-
-.slider__title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1.75rem;
+    width: 91px;
+    height: 91px;
+    background-color: $blue;
+    color: $white;
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
 
     @include tablets {
-        text-align: center;
+      display: none;
     }
-}
 
-.slaider__desc {
-    color: #666666;
+    &:hover + .param__panel {
+      display: flex;
+    }
+  }
+
+  &__title {
+    @extend %uppercase-title;
+    font-size: 36px;
+    color: $black;
+    margin-bottom: 1.75rem;
+
+    @include tablets {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  &__desc {
+    color: $grey;
     line-height: 1.35rem;
-    font-size: 1.125rem;
-    font-weight: 400;
-}
+  }
 
-.slider__tech {
+  &__tech {
     display: flex;
 
     @include tablets {
-        display: inline-flex;
+      display: inline-flex;
     }
-}
+  }
 
-.tech__dl {
-    margin-right: 3.1875rem;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-}
-
-
-.tech__dl__title {
-    color: #666666;
-    font-size: 1.125rem;
-    line-height: 1.35rem;
-    font-weight: 400;
-}
-
-.tech__dl__desc {
-    font-size: 1.125rem;
-    line-height: 1.35rem;
-    font-weight: 700;
-}
-
-.slider__cust {
+  &__cust {
     display: flex;
 
     @include tablets {
-        display: inline-flex;
+      display: inline-flex;
     }
-}
+  }
 
-.slider__price {
-    font-size: 3.75rem;
-    line-height: 3.75rem;
+  &__price {
+    font-size: 60px;
     font-weight: 300;
     margin-right: 3.1875rem;
-}
+  }
 
-.slider__btn {
+  &__btn {
     margin-top: 1.125rem;
+  }
 }
 
-//////
-/* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .bx-prev {
-    left: -30px;
-    background: url('https://rudanastasia.github.io/surfboard/img/icons/left.png') no-repeat 0 -5px;
-
-    @include tablets {
-        left: -4px;
-    }
+.param {
+  &__content {
+    @extend %center-absolute;
   }
-  .bx-wrapper .bx-prev:hover,
-  .bx-wrapper .bx-prev:focus {
-    background-position: 0 0;
+  &__img {
+    width: 38px;
+    height: 38px;
   }
-  .bx-wrapper .bx-next {
-    right: -30px;
-    background: url('https://rudanastasia.github.io/surfboard/img/icons/right.png') no-repeat 0 0px;
-
-    @include tablets {
-        right: -4px;
-    }
-  }
-  .bx-wrapper .bx-next:hover,
-  .bx-wrapper .bx-next:focus {
-    background-position: -43px 0;
-  }
-  .bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 32px;
-    height: 32px;
-    text-indent: -9999px;
-    z-index: 9999;
-  }
-  .bx-wrapper .bx-controls-direction a.disabled {
-    display: none;
-  }
-
-  .param-long {
-    background: #d5d5d5;
+  &__panel {
+    background: $light-grey;
     font-weight: 500;
     font-size: 16px;
     line-height: 40px;
-    display: flex;
     width: 30%;
     padding: 30px;
     position: absolute;
-    left: 512px;
-    top: 0px;
+    left: 510px;
+    top: 0;
     border-radius: 2%;
     display: none;
   }
 
-.long {
+  &__labels {
     margin-right: 20px;
   }
 
-.st {
+  &__item {
     margin-left: 25px;
+
+    &--length {
+      &::before {
+        content: url(../img/icons/length.svg);
+        position: absolute;
+        top: 32px;
+        left: 12px;
+      }
+    }
+
+    &--width {
+      &::before {
+        content: url(../img/icons/width.svg);
+        position: absolute;
+        left: 12px;
+        top: 69px;
+      }
+    }
+
+    &--thickness {
+      &::before {
+        content: url(../img/icons/thickness.svg);
+        position: absolute;
+        left: 12px;
+      }
+    }
+
+    &--lifetime {
+      &::before {
+        content: url(../img/icons/lifetime.svg);
+        position: absolute;
+        left: 12px;
+      }
+    }
+
+    &--weight {
+      &::before {
+        content: url(../img/icons/weight.svg);
+        position: absolute;
+        left: 12px;
+      }
+    }
+  }
 }
 
-.st-dlina:before {
-   content: url(https://rudanastasia.github.io/surfboard/img/icons/length.png);
-   position: absolute;
-   top: 32px;
-   left: 12px;
+.tech {
+  &__dl {
+    margin: 2.5rem 3.1875rem 2.5rem 0;
+  }
+
+  &__dl-title {
+    color: $grey;
+  }
+
+  &__dl-desc {
+    font-weight: 700;
+  }
 }
 
-.st-shirina:before {
-   content: url(https://rudanastasia.github.io/surfboard/img/icons/width.png);
-   position: absolute;
-   left: 12px;
-   top: 69px;
-}
+//////
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper {
+  .bx-prev {
+    left: -30px;
+    background: url('../img/icons/arrow-left.svg') no-repeat center center;
 
-.st-tolshina:before {
-   content: url(https://rudanastasia.github.io/surfboard/img/icons/thickness.png);
-   position: absolute;
-   left: 12px;
-}
+    @include tablets {
+      left: -4px;
+    }
 
-.st-srok:before {
-   content: url(https://rudanastasia.github.io/surfboard/img/icons/lifetime.png);
-   position: absolute;
-   left: 12px;
-}
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
 
-.st-ves:before {
-   content: url(https://rudanastasia.github.io/surfboard/img/icons/weight.png);
-   position: absolute;
-   left: 12px;
-}
+  .bx-next {
+    right: -30px;
+    background: url('../img/icons/arrow-right.svg') no-repeat center center;
 
-.hidden {
-    display: flex; 
+    @include tablets {
+      right: -4px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  .bx-controls-direction {
+    a {
+      position: absolute;
+      top: 50%;
+      margin-top: -16px;
+      width: 32px;
+      height: 32px;
+      outline: 0;
+      text-indent: -9999px;
+      z-index: 9999;
+      transition: opacity 0.3s;
+
+      &.disabled {
+        display: none;
+      }
+    }
+  }
 }

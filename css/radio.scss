@@ -1,38 +1,35 @@
 .radio {
-    display: flex;
-    cursor: pointer;
-    user-select: none;
-    margin-top: 1.6875rem;
-    margin-bottom: -0.4375rem;
-    padding-right: 1.6875rem;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin: 1.6875rem 0 -0.4375rem;
+  padding-right: 1.6875rem;
 
-    @include tablets {
-        margin-top: 1.25rem;
+  @include tablets {
+    margin-top: 1.25rem;
+  }
+
+  &--checkbox {
+    .radio__visible {
+      border-radius: 0;
+
+      &:before {
+        background: url(../img/icons/checkmark.svg) center center no-repeat;
+      }
     }
+  }
 
-    &--checkbox {
-        .radio__visible {
-            border-radius: 0;
-
-            &:before {
-                background: url(https://rudanastasia.github.io/surfboard/img/icons/checkmark.png) center center no-repeat;
-            
-            }
-        }
-    }
-}
-
-.radio__elem {
+  &__elem {
     display: none;
 
     &:checked ~ .radio__visible {
-        &::before {
-            display: block;
-        }
+      &::before {
+        display: block;
+      }
     }
-}
+  }
 
-.radio__visible {
+  &__visible {
     width: 1.625rem;
     height: 1.625rem;
     position: relative;
@@ -41,15 +38,16 @@
     margin-right: 0.625rem;
 
     &:before {
-        content: "";
-        width: 0.875rem;
-        height: 0.875rem;
-        background: #FEDB3F;
-        border-radius: 50%;
-        position: absolute;
-        display: none;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      content: '';
+      width: 0.875rem;
+      height: 0.875rem;
+      background: #fedb3f;
+      border-radius: 50%;
+      position: absolute;
+      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
+  }
 }

@@ -1,75 +1,66 @@
 .hero {
-    background: url(https://rudanastasia.github.io/surfboard/img/decor/bgmain.png) center top no-repeat;
-    background-color: white;
-    /*height: 100vh;*/
-    min-height: 40.625rem;
-    background-size: cover;
+  background: url(../img/cover/bgmain.png) center top / cover no-repeat;
+  background-color: $white;
+  min-height: 40.625rem;
+
+  @include tablets {
+    background: url(../img/cover/tabletsbg.png) center top / cover no-repeat;
+    height: 58.5625rem;
+  }
+
+  &__container {
+    padding: 1.5rem 0 2.8125rem 0;
 
     @include tablets {
-        background: url(https://rudanastasia.github.io/surfboard/img/decor/tabletsbg.png) center top no-repeat;
-        background-size: cover;
-        height: 58.5625rem;
+      padding-top: 0;
     }
-}
+  }
 
-.hero__title-section {
+  &__title-section {
     width: 46%;
     margin-top: 6.6875rem;
 
     @include tablets {
-        width: 100%;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
-}
+  }
 
-.hero__icons-section {
-    @include tablets {
-        display: none;
-    }
-}
-
-.hero__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 1.5rem 0 2.8125rem 0;
-}
-
-.hero__main-title {
-    font-size: 3rem;
+  &__main-title {
+    @extend %uppercase-title;
+    font-size: 48px;
     line-height: 1.1;
-    font-weight: bold;
     margin-bottom: 0.9375rem;
-    text-transform: uppercase;
-    color: white;
+    color: $white;
 
     @include tablets {
-        margin-top: 4.125rem;
+      margin-top: 4.125rem;
     }
 
     @include phones {
-        font-size: 2.5rem;
+      font-size: 40px;
     }
-}
+  }
 
-.hero__title-description {
-    font-size: 1.3125rem;
+  &__title-description {
+    font-size: 21px;
     margin-bottom: 3.5rem;
-    padding-right: 10%;
-    color: white;
+    color: $white;
     margin-top: 1.625rem;
 
-    @include tablets {
-        padding: 0 23%;
-    }
-
     @include phones {
-        padding: 0 10%;
+      font-size: $baseFontSize;
     }
+  }
+
+  &__icons-section {
+    @include tablets {
+      display: none;
+    }
+  }
 }

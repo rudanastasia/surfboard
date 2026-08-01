@@ -1,0 +1,24 @@
+$containerWidth: 1100px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$black: #292929;
+$dark-grey: #404040;
+$white: #ffffff;
+$white-dark: #f8faf9;
+$white-light: #f2f5f4;
+$yellow: #fedb3f;
+$grey: #666666;
+$light-grey: #d5d5d5;
+$light-black: #333537;
+$blue: #3a587e;
+$bright-blue: #1e63b8;
+$black-opacity: rgba(0, 0, 0, 0.5);
+
+//z-index
+$z-fixed-menu: 100;
+$z-modal: 100;

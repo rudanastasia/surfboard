@@ -5,132 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">-->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Surfboard</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero">
+            <section class="hero" id="start">
                 <div class="container hero__container">
                     <header class="header">
-                        <img src="https://rudanastasia.github.io/surfboard/img/surflogo.png" alt="logo" class="logo">
+                        <a href="./" class="logo-company">
+                            <svg class="logo">
+                                <use href="img/sprite/sprite.svg#logo"></use>
+                            </svg></a>
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#about-us" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Серфборды</a>
+                                    <a href="#our-products" class="menu__link">Серфборды</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#our-team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Меню</a>
+                                    <a href="#our-menu" class="menu__link">Меню</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a href="#how-we-work" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#our-contacts" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
-                            <div class="modal__close"></div>
                         </nav>
-                        <a href="tel:+78009039090" class="phone-number header__phone-number">
-                            <span class="phone-number__icon">
-                                <img src="https://rudanastasia.github.io/surfboard/img/icons/phone.svg"
-                                    class="phone-number__icon-elem" alt="phone">
-                            </span>
-                            <span class="phone-number__text">8 800 903 90 90</span>
-                        </a>
-                        <div class="hamburger">
-                            <span class="hamburger__plank"></span>
-                            <span class="hamburger__plank"></span>
-                            <span class="hamburger__plank"></span>
-                        </div>
-                        <div class="modal">
-                            <ul class="menu__burger__list">
-                                <li class="menu__burger__elem">
-                                    <a href="#" class="menu__burger__link">О нас</a>
-                                </li>
-                                <li class="menu__burger__elem">
-                                    <a href="#" class="menu__burger__link">Серфборды</a>
-                                </li>
-                                <li class="menu__burger__elem">
-                                    <a href="#" class="menu__burger__link">Команда</a>
-                                </li>
-                                <li class="menu__burger__elem">
-                                    <a href="#" class="menu__burger__link">Меню</a>
-                                </li>
-                                <li class="menu__burger__elem">
-                                    <a href="#" class="menu__burger__link">Отзывы</a>
-                                </li>
-                                <li class="menu__burger__elem">
-                                    <a href="#" class="menu__burger__link">Как мы работаем</a>
-                                </li>
-                                <li class="menu__burger__elem">
-                                    <a href="#" class="menu__burger__link">Контакты</a>
-                                </li>
-                            </ul>
-                            <div class="modal__close"><img
-                                    src="https://rudanastasia.github.io/surfboard/img/icons/close.png"
-                                    class="menu-close" alt="close"></div>
-                        </div>
+                        <a href="tel:+78009039090" class="phone-number">8 800 903 90 90</a>
+                        <div class="hamburger"></div>
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для
                             серфинга</h1>
                         <div class="hero__title-description">Самый большой выбор серфбордов в мире</div>
-                        <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                        <div class="hero__btn">
+                            <a href="#our-contacts" class="btn btn--yellow">Заказать</a>
+                        </div>
                     </div>
-                    <div class="hero__icons-section">
-                        <ul class="features">
-                            <li class="features__item feature">
-                                <div class="feature__icon">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/design.svg"
-                                        alt="design">
-                                </div>
-                                <div class="feature__text">Уникальный дизайн</div>
+                    <div class="features">
+                        <ul class="features__list">
+                            <li class="features__item features__item--design">
+                                <div class="features__text">Уникальный дизайн</div>
                             </li>
-                            <li class="features__item feature">
-                                <div class="feature__icon">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/sawmill.svg"
-                                        alt="design">
-                                </div>
-                                <div class="feature__text">Прочные материалы</div>
+                            <li class="features__item features__item--materials">
+                                <div class="features__text">Прочные материалы</div>
                             </li>
-                            <li class="features__item feature">
-                                <div class="feature__icon">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/delivery.svg"
-                                        alt="design">
-                                </div>
-                                <div class="feature__text">Быстрая доставка</div>
+                            <li class="features__item features__item--delivery">
+                                <div class="features__text">Быстрая доставка</div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section" id="about-us" data-bg="light">
                 <div class="container">
                     <div class="headline">
-                        <h2 class="section__title headline__title">Почему Surfboard?</h2>
-                        <div class="headline__subtitle">Мы создаем уникальные и качественные доски из прочных и
+                        <h2 class="section__title">Почему Surfboard?</h2>
+                        <div class="section__subtitle">Мы создаем уникальные и качественные доски из прочных и
                             экологичных материалов.</div>
                     </div>
                     <ul class="benefits">
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
-                                <div class="benefit__image-wrapper">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/perfect.svg"
-                                        alt="benefit" class="benefit__icon">
-                                </div>
+                                <svg class="benefit__image-wrapper">
+                                    <use href="img/sprite/sprite.svg#fit"></use>
+                                </svg>
                             </div>
                             <div class="benefit__text">
                                 <h3 class="benefit__title">Perfect Fit</h3>
@@ -142,10 +94,9 @@
                         </li>
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
-                                <div class="benefit__image-wrapper">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/strong.svg"
-                                        alt="benefit" class="benefit__icon">
-                                </div>
+                                <svg class="benefit__image-wrapper">
+                                    <use href="img/sprite/sprite.svg#strong"></use>
+                                </svg>
                             </div>
                             <div class="benefit__text">
                                 <h3 class="benefit__title">Strong</h3>
@@ -157,10 +108,9 @@
                         </li>
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
-                                <div class="benefit__image-wrapper">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/unique.svg"
-                                        alt="benefit" class="benefit__icon">
-                                </div>
+                                <svg class="benefit__image-wrapper">
+                                    <use href="img/sprite/sprite.svg#unique"></use>
+                                </svg>
                             </div>
                             <div class="benefit__text">
                                 <h3 class="benefit__title">Unique</h3>
@@ -173,38 +123,41 @@
                     </ul>
                 </div>
             </section>
-            <section class="section__slaider">
+            <section class="section section--dark" id="our-products" data-bg="light">
                 <div class="container">
                     <ul class="slider__all">
                         <li class="slider__item">
-                            <div class="slaider__img">
-                                <img src="https://rudanastasia.github.io/surfboard/img/decor/surf1.png" alt="photo"
-                                    class="slaider__img">
+                            <div class="slider__img">
+                                <img src="img/products/surf-blue.png" alt="photo" class="slider__image">
                             </div>
                             <div id="close" class="slider__inner">
-                                <div class="slaider__param">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo"
-                                        class="param__img">
+                                <div class="slider__param">
+                                    <div class="param__content">
+                                        <svg class="param__img">
+                                            <use href="img/sprite/sprite.svg#parametrs"></use>
+                                        </svg>
+                                        <div class="param_text">Параметры</div>
+                                    </div>
                                 </div>
-                                <div id="hidden" class="param-long">
-                                    <ul class="long">
-                                        <li class="st st-dlina">Длина доски</li>
-                                        <li class="st st-shirina">Ширина доски</li>
-                                        <li class="st st-tolshina">Толщина</li>
-                                        <li class="st st-srok">Срок службы</li>
-                                        <li class="st st-ves">Вес</li>
+                                <div id="hidden" class="param__panel">
+                                    <ul class="param__labels">
+                                        <li class="param__item param__item--length">Длина доски</li>
+                                        <li class="param__item param__item--width">Ширина доски</li>
+                                        <li class="param__item param__item--thickness">Толщина</li>
+                                        <li class="param__item param__item--lifetime">Срок службы</li>
+                                        <li class="param__item param__item--weight">Вес</li>
                                     </ul>
-                                    <ul class="long-zn">
-                                        <li class="st">от 2,5 м</li>
-                                        <li class="st">от 40 см</li>
-                                        <li class="st">8 см</li>
-                                        <li class="st">5 лет</li>
-                                        <li class="st">7-8 кг</li>
+                                    <ul class="param__values">
+                                        <li class="param__item">от 2,5 м</li>
+                                        <li class="param__item">от 40 см</li>
+                                        <li class="param__item">8 см</li>
+                                        <li class="param__item">5 лет</li>
+                                        <li class="param__item">7-8 кг</li>
                                     </ul>
                                 </div>
-                                <div class="slaider__content">
+                                <div class="slider__content">
                                     <h2 class="slider__title">Лонгборд 2.0</h2>
-                                    <div class="slaider__desc">
+                                    <div class="slider__desc">
                                         <p>Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
                                             разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
                                             очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
@@ -214,51 +167,54 @@
                                 </div>
                                 <div class="slider__tech">
                                     <div class="tech__dl">
-                                        <div class="tech__dl__title">Длина доски</div>
-                                        <div class="tech__dl__desc">от 2,5 метров</div>
+                                        <div class="tech__dl-title">Длина доски</div>
+                                        <div class="tech__dl-desc">от 2,5 метров</div>
                                     </div>
                                     <div class="tech__dl">
-                                        <div class="tech__dl__title">Ширина доски</div>
-                                        <div class="tech__dl__desc">от 40 сантиметров</div>
+                                        <div class="tech__dl-title">Ширина доски</div>
+                                        <div class="tech__dl-desc">от 40 сантиметров</div>
                                     </div>
                                 </div>
                                 <div class="slider__cust">
                                     <div class="slider__price">7000 ₽</div>
                                     <div class="slider__btn">
-                                        <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                                        <a href="#our-contacts" class="btn btn--yellow">Заказать</a>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li class="slider__item">
-                            <div class="slaider__img">
-                                <img src="https://rudanastasia.github.io/surfboard/img/decor/surf2.png" alt="photo"
-                                    class="slaider__img">
+                            <div class="slider__img">
+                                <img src="img/products/surf-orange.png" alt="photo" class="slider__image">
                             </div>
                             <div class="slider__inner">
-                                <div class="slaider__param">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/decor/param.png" alt="photo"
-                                        class="param__img">
+                                <div class="slider__param">
+                                    <div class="param__content">
+                                        <svg class="param__img">
+                                            <use href="img/sprite/sprite.svg#parametrs"></use>
+                                        </svg>
+                                        <div class="param_text">Параметры</div>
+                                    </div>
                                 </div>
-                                <div id="hidden" class="param-long">
-                                    <ul class="long">
-                                        <li class="st st-dlina">Длина доски</li>
-                                        <li class="st st-shirina">Ширина доски</li>
-                                        <li class="st st-tolshina">Толщина</li>
-                                        <li class="st st-srok">Срок службы</li>
-                                        <li class="st st-ves">Вес</li>
+                                <div id="hidden" class="param__panel">
+                                    <ul class="param__labels">
+                                        <li class="param__item param__item--length">Длина доски</li>
+                                        <li class="param__item param__item--width">Ширина доски</li>
+                                        <li class="param__item param__item--thickness">Толщина</li>
+                                        <li class="param__item param__item--lifetime">Срок службы</li>
+                                        <li class="param__item param__item--weight">Вес</li>
                                     </ul>
-                                    <ul class="long-zn">
-                                        <li class="st">от 1,5 м</li>
-                                        <li class="st">от 30 см</li>
-                                        <li class="st">8 см</li>
-                                        <li class="st">5 лет</li>
-                                        <li class="st">7-8 кг</li>
+                                    <ul class="param__values">
+                                        <li class="param__item">от 1,5 м</li>
+                                        <li class="param__item">от 30 см</li>
+                                        <li class="param__item">8 см</li>
+                                        <li class="param__item">5 лет</li>
+                                        <li class="param__item">7-8 кг</li>
                                     </ul>
                                 </div>
-                                <div class="slaider__content">
+                                <div class="slider__content">
                                     <h2 class="slider__title">Шортборд</h2>
-                                    <div class="slaider__desc">
+                                    <div class="slider__desc">
                                         <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро
                                             набирать скорость, делать различные трюки на волне, включая резкие повороты
                                             и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с
@@ -268,18 +224,18 @@
                                 </div>
                                 <div class="slider__tech">
                                     <div class="tech__dl">
-                                        <div class="tech__dl__title">Длина доски</div>
-                                        <div class="tech__dl__desc">от 1,5 метров</div>
+                                        <div class="tech__dl-title">Длина доски</div>
+                                        <div class="tech__dl-desc">от 1,5 метров</div>
                                     </div>
                                     <div class="tech__dl">
-                                        <div class="tech__dl__title">Ширина доски</div>
-                                        <div class="tech__dl__desc">от 30 сантиметров</div>
+                                        <div class="tech__dl-title">Ширина доски</div>
+                                        <div class="tech__dl-desc">от 30 сантиметров</div>
                                     </div>
                                 </div>
                                 <div class="slider__cust">
                                     <div class="slider__price">12000 ₽</div>
                                     <div class="slider__btn">
-                                        <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                                        <a href="#our-contacts" class="btn btn--yellow">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -287,15 +243,14 @@
                     </ul>
                 </div>
             </section>
-            <section class="section__team">
+            <section class="section" id="our-team" data-bg="light">
                 <div class="container">
+                    <h2 class="section__title">Команда</h2>
                     <div class="team">
-                        <h2 class="section__title">Команда</h2>
-                        <ul class="team__list team__list--desktop">
-                            <li class="team__item team__item--desktop">
+                        <ul class="team__list">
+                            <li class="team__item">
                                 <div class="team__avatar">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/boris.png" alt="avatar"
-                                        class="team__avatar-img">
+                                    <img src="img/avatars/boris.png" alt="avatar" class="team__avatar-img">
                                 </div>
                                 <button class="team__title" type="button">Борис Федорович</button>
                                 <div class="team__description">
@@ -305,10 +260,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="team__item team__item--desktop">
+                            <li class="team__item">
                                 <div class="team__avatar">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/olga.png" alt="avatar"
-                                        class="team__avatar-img">
+                                    <img src="img/avatars/olga.png" alt="avatar" class="team__avatar-img">
                                 </div>
                                 <button class="team__title" type="button">Ольга Невзорова</button>
                                 <div class="team__description">
@@ -318,10 +272,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="team__item team__item--desktop">
+                            <li class="team__item">
                                 <div class="team__avatar">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/ingvar.png"
-                                        alt="avatar" class="team__avatar-img">
+                                    <img src="img/avatars/ingvar.png" alt="avatar" class="team__avatar-img">
                                 </div>
                                 <button class="team__title" type="button">Ингвар Нильсон</button>
                                 <div class="team__description">
@@ -331,10 +284,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="team__item team__item--desktop">
+                            <li class="team__item">
                                 <div class="team__avatar">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/katerina.png"
-                                        alt="avatar" class="team__avatar-img">
+                                    <img src="img/avatars/katerina.png" alt="avatar" class="team__avatar-img">
                                 </div>
                                 <button class="team__title" type="button">Екатерина Иванова</button>
                                 <div class="team__description">
@@ -345,124 +297,44 @@
                                 </div>
                             </li>
                         </ul>
-                        <!-- mobile -->
-                        <ul class="team__list team__list--mobile">
-                            <li class="team__item team__item--mobile">
-                                <button class="team__title" type="button">Борис Федорович</button>
-                                <div class="team__description">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/boris.png"
-                                                alt="avatar" class="team__avatar-img">
-                                        </div>
-                                        <div class="team__spec">Главный технолог</div>
-                                        <div class="team__desc">Отвечает за материалы и разработку досок</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="team__item team__item--mobile">
-                                <button class="team__title" type="button">Ольга Невзорова</button>
-                                <div class="team__description">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/olga.png"
-                                                alt="avatar" class="team__avatar-img">
-                                        </div>
-                                        <div class="team__spec">Дизайнер</div>
-                                        <div class="team__desc">Создает дизайн серфбордов</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="team__item team__item--mobile">
-                                <button class="team__title" type="button">Ингвар Нильсон</button>
-                                <div class="team__description">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/ingvar.png"
-                                                alt="avatar" class="team__avatar-img">
-                                        </div>
-                                        <div class="team__spec">Спортсмен</div>
-                                        <div class="team__desc">Участвует в разработке серфбордов</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="team__item team__item--mobile">
-                                <button class="team__title" type="button">Екатерина Иванова</button>
-                                <div class="team__description">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/katerina.png"
-                                                alt="avatar" class="team__avatar-img">
-                                        </div>
-                                        <div class="team__spec">Тестировщик</div>
-                                        <div class="team__desc">Отвечает за разработку новых продуктов</div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- mobile -->
                     </div>
                 </div>
             </section>
-            <!--<section class="section products-menu-section">
-                <h1 class="section__title products-menu-section__title">Меню</h1>
-                <ul class="products-menu">
-                    <li class="products-menu__item">
-                        <a href="#" class="products-menu__title products-menu__title-longboard">Лонгборды</a>
-                        <div class="products-menu__content">
-                            <div class="products-menu__container">
-                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="products-menu__item">
-                        <a href="#" class="products-menu__title products-menu__title-shortboard">Шортборды</a>
-                        <div class="products-menu__content">
-                            <div class="products-menu__container">
-                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="products-menu__item">
-                        <a href="#" class="products-menu__title products-menu__title-softtop">Софттопы</a>
-                        <div class="products-menu__content">
-                            <div class="products-menu__container">
-                                <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>-->
-            <section class="products-menu-section">
-                <h1 class="section__title products-menu-section__title">Меню</h1>
-                <ul class="products-menu">
-                    <li class="products-menu__item">
-                        <a href="#" class="products-menu__title products-menu__title-longboard">
-                            <span class="menu-acco__trigger-text">Лонгборды</span>
-                        </a>
-                        <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать,
-                            сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
-                    </li>
-                    <li class="products-menu__item">
-                        <a href="#" class="products-menu__title products-menu__title-shortboard">
-                            <span class="menu-acco__trigger-text">Шортборды</span>
-                        </a>
-                        <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать,
-                            сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
-                    </li>
-                    <li class="products-menu__item">
-                        <a href="#" class="products-menu__title products-menu__title-softtop">
-                            <span class="menu-acco__trigger-text">Софттопы</span>
-                        </a>
-                        <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко лежать,
-                            сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</div>
-                    </li>
-                </ul>
+            <section class="products__section" id="our-menu">
+                <div class="container products__container">
+                    <h1 class="section__title products__title">Меню</h1>
+                    <ul class="products-menu">
+                        <li class="products-menu__item">
+                            <a href="#" class="products-menu__title products-menu__title--longboard">
+                                <span class="products-menu__title-text">Лонгборды</span>
+                            </a>
+                            <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко
+                                лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски
+                                позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий
+                                ехать по ним.</div>
+                        </li>
+                        <li class="products-menu__item">
+                            <a href="#" class="products-menu__title products-menu__title--shortboard">
+                                <span class="products-menu__title-text">Шортборды</span>
+                            </a>
+                            <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко
+                                лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски
+                                позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий
+                                ехать по ним.</div>
+                        </li>
+                        <li class="products-menu__item">
+                            <a href="#" class="products-menu__title products-menu__title--softtop">
+                                <span class="products-menu__title-text">Софттопы</span>
+                            </a>
+                            <div class="products-menu__content-text">Устойчивая доска для новичков. На них легко
+                                лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски
+                                позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий
+                                ехать по ним.</div>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section class="section">
+            <section class="section" id="reviews" data-bg="light">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
@@ -471,8 +343,7 @@
                                 <li class="reviews__item active" data-linked-with="one">
                                     <div class="reviews__display-inner">
                                         <div class="reviews__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/girl.png"
-                                                alt="avatar" class="reviews__avatar-img">
+                                            <img src="img/avatars/girl.png" alt="avatar" class="reviews__avatar-img">
                                         </div>
                                         <article class="reviews__content">
                                             <h3 class="reviews__title">Лучший дизайн</h3>
@@ -489,8 +360,7 @@
                                 <li class="reviews__item" data-linked-with="two">
                                     <div class="reviews__display-inner">
                                         <div class="reviews__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/mark.png"
-                                                alt="avatar" class="reviews__avatar-img">
+                                            <img src="img/avatars/mark.png" alt="avatar" class="reviews__avatar-img">
                                         </div>
                                         <article class="reviews__content">
                                             <h3 class="reviews__title">Нереальная скорость</h3>
@@ -508,8 +378,7 @@
                                 <li class="reviews__item" data-linked-with="three">
                                     <div class="reviews__display-inner">
                                         <div class="reviews__avatar">
-                                            <img src="https://rudanastasia.github.io/surfboard/img/icons/vas.jpg"
-                                                alt="avatar" class="reviews__avatar-img">
+                                            <img src="img/avatars/vas.jpg" alt="avatar" class="reviews__avatar-img">
                                         </div>
                                         <article class="reviews__content">
                                             <h3 class="reviews__title">Устойчивость и безопасность</h3>
@@ -526,29 +395,26 @@
                             </ul>
                         </div>
                         <ul class="reviews__switcher">
-                            <li class="reviews-switcher__item active">
+                            <li class="reviews-switcher__item reviews-switcher__item--active">
                                 <a href="" class="reviews-switcher__link" data-open="one">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/girlactive.png"
-                                        alt="avatar" class="reviews-switcher__img">
+                                    <img src="img/avatars/girlactive.png" alt="avatar" class="reviews-switcher__img">
                                 </a>
                             </li>
                             <li class="reviews-switcher__item">
                                 <a href="" class="reviews-switcher__link" data-open="two">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/boy.png" alt="avatar"
-                                        class="reviews-switcher__img">
+                                    <img src="img/avatars/boy.png" alt="avatar" class="reviews-switcher__img">
                                 </a>
                             </li>
                             <li class="reviews-switcher__item">
                                 <a href="" class="reviews-switcher__link" data-open="three">
-                                    <img src="https://rudanastasia.github.io/surfboard/img/icons/girl2.png" alt="avatar"
-                                        class="reviews-switcher__img">
+                                    <img src="img/avatars/girl2.png" alt="avatar" class="reviews-switcher__img">
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section player-section">
+            <section class="section player-section" id="how-we-work" data-bg="light">
                 <div class="container">
                     <h2 class="section__title headline__title">Как мы работаем</h2>
                     <div class="player-section__container">
@@ -560,31 +426,33 @@
                             <div class="player__controls">
                                 <button class="player__start"></button>
                                 <div class="player__playback">
+                                    <div class="player__playback-progress"></div>
                                     <button class="player__playback-button"></button>
                                 </div>
-                                <div class="player__duration">
-                                    <span class="player__duration-completed">0:00</span> :
-                                    <span class="player__duration-estimate">0:00</span>
+                                <button class="player__mute"></button>
+                                <div class="player__volume">
+                                    <div class="player__volume-progress"></div>
+                                    <button class="player__volume-button"></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section order-section section--font-color--white">
+            <section class="section section--bg" id="our-contacts">
                 <div class="container">
-                    <h2 class="section__title">Закажите доску</h2>
+                    <h2 class="section__title section__title--light">Закажите доску</h2>
                     <form class="form">
                         <input type="hidden" name="to" value="some@gmail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" name="name" class="form__input input-error">
+                                    <input type="text" name="name" class="form__input ">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" name="phone" class="form__input input-error">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
@@ -616,8 +484,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea name="comment"
-                                        class="form__input form__input--textarea input-error"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -640,110 +507,123 @@
                                 </label>
                             </div>
                             <div class="form__btns">
-                                <input type="submit" id="myBtn" value="Заказать" class="btn btn--theme--yellow">
-                                <input type="reset" value="Очистить" class="btn btn--theme--transparent">
+                                <input type="submit" id="myBtn" value="Заказать" class="btn btn--yellow">
+                                <input type="reset" value="Очистить" class="btn btn--transparent">
                             </div>
                         </div>
                     </form>
                 </div>
             </section>
-            <footer class="footer-container">
-        <div class="container footer-container__content">
-            <div class="footer">
-                <nav class="menu-footer">
-                    <ul class="menu-footer__list">
-                        <li class="menu-footer__item">
-                            Москва, ул.Новый Арбат, д.31/12
+            <section class="map">
+                <div id="map">
+                </div>
+            </section>
+        </div>
+        <footer class="footer-container">
+            <div class="container">
+                <div class="footer">
+                    <nav class="menu-footer">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                Москва, ул.Новый Арбат, д.31/12
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="tel:+78009039090" class="footer__phone-number">8 800 903 90 90</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--vk"></a>
                         </li>
-                        <li class="menu-footer__item">
-                            <a href="tel:+78009039090" class="footer__phone-number">8 800 903 90 90</a>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--facebook"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--instagram"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--twitter"></a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="socials">
-                    <li class="socials__item socials__item--icon--telegram">
-                        <a href="#" class="socials__link"></a>
-                    </li>
-                    <li class="socials__item socials__item--icon--vk">
-                        <a href="#" class="socials__link"></a>
-                    </li>
-                    <li class="socials__item socials__item--icon--facebook">
-                        <a href="#" class="socials__link"></a>
-                    </li>
-                    <li class="socials__item socials__item--icon--instagram">
-                        <a href="#" class="socials__link"></a>
-                    </li>
-                </ul>
+                </div>
             </div>
-        </div>
-    </footer>
-        </div>
+        </footer>
     </div>
-    <!--<div id="modale" class="modale">
-        <div class="modale__container">
-            <div class="modale__content">
-                Сообщение отправлено
-            </div>
-            <div class="modale__button-container">
-                <a href ="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
-            </div>
-        </div>
-    </div>-->
-
-    <!--<button id="myBtn">Открыть окно</button>-->
     <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <!--<h2>Шапка модального окна</h2>-->
+        <div class="modal__content">
+            <div class="modal__header">
+                <span class="modal__close"></span>
             </div>
-            <div class="modal-body">
+            <div class="modal__body">
                 <p>Сообщение отправлено</p>
             </div>
-            <!--<div class="modal-footer">
-          <h3>Футер модального окна</h3>
-        </div>-->
-            <div class="modale__button-container">
-                <a href="#" class="btn app-submit-btn btn--theme--yellow">Закрыть</a>
+            <div class="modal__button-container">
+                <a href="#" class="btn modal__action btn--yellow">Закрыть</a>
             </div>
         </div>
     </div>
+
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active">
-                <a href="" class="fixed-menu__link"></a>
+            <li class="fixed-menu__item">
+                <a href="#start" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#about-us" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#our-products" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#our-team" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#our-menu" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#reviews" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#how-we-work" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#our-contacts" class="fixed-menu__link"></a>
             </li>
         </ul>
     </nav>
+    <div class="burger-menu">
+        <ul class="burger-menu__list">
+            <li class="burger-menu__item">
+                <a href="#about-us" class="burger-menu__link">О нас</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="#our-products" class="burger-menu__link">Серфборды</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="#our-team" class="burger-menu__link">Команда</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="#our-menu" class="burger-menu__link">Меню</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="#reviews" class="burger-menu__link">Отзывы</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="#how-we-work" class="burger-menu__link">Как мы работаем</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="#our-contacts" class="burger-menu__link">Контакты</a>
+            </li>
+        </ul>
+        <button class="burger-menu__close" type="button" aria-label="Закрыть меню"></button>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=08c5f0d6-8f9c-46dd-9597-0fa0e2a4efca&lang=ru_RU"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=08c5f0d6-8f9c-46dd-9597-0fa0e2a4efca&lang=ru_RU"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imask@7/dist/imask.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

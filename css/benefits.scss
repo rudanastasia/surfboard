@@ -1,44 +1,43 @@
 .benefits {
-    display: flex;
-    margin-top: 1.875rem;
-    max-width: 95%;
+  display: flex;
 
-    @include phones {
-        flex-direction: column;
-    }
-}
+  @include phones {
+    flex-direction: column;
+  }
 
-.benefits__item {
+  &__item {
     flex: 1;
+    min-width: 0;
     padding: 0 3%;
     position: relative;
 
     @include phones {
-        padding: 0;
-        margin-bottom: 25px;
+      padding: 0;
+      margin-bottom: 25px;
     }
 
     &:before {
-        content: url(https://rudanastasia.github.io/surfboard/img/icons/separator.png);
-        position: absolute;
-        right: 0;
-        top: 3.25rem;
-        transform: translateX(50%);
+      content: url(../img/icons/separator.svg);
+      position: absolute;
+      right: 0;
+      top: 3.25rem;
+      transform: translateX(50%);
 
-        @include phones {
-            display: none;
-        }
+      @include tablets {
+        display: none;
+      }
     }
 
     &:first-child {
-        padding-left: 0;
+      padding-left: 0;
     }
 
     &:last-child {
-        padding-right: 0;
+      padding-right: 0;
 
-        &:before {
-            display: none;
-        }
+      &:before {
+        display: none;
+      }
     }
+  }
 }

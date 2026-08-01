@@ -1,29 +1,52 @@
 .features {
-    display: flex;
-}
+  margin-top: 17px;
 
-.features__item {
+  @include tablets {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+  }
+
+  &__item {
     margin-right: 2.875rem;
     margin-top: 4.875rem;
 
     &:last-child {
-        margin-right: 0;
+      margin-right: 0;
     }
-}
 
-.feature {
-    display: flex;
+    &::before {
+      content: '';
+      position: absolute;
+    }
 
-}
+    &--design {
+      &::before {
+        content: url('../img/icons/design.svg');
+      }
+    }
 
-.feature__icon {
-    width: 2.8125rem;
-    margin-right: 0.4375rem;
-}
+    &--materials {
+      &::before {
+        content: url('../img/icons/sawmill.svg');
+      }
+    }
 
-.feature__text {
-    font-size: 1rem;
+    &--delivery {
+      &::before {
+        content: url('../img/icons/delivery.svg');
+      }
+    }
+  }
+
+  &__text {
+    font-size: 16px;
     max-width: 5.3125rem;
-    color: white;
+    color: $white;
     font-weight: bold;
+    margin-left: 60px;
+  }
 }
