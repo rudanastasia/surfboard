@@ -909,7 +909,8 @@ img {
 .products__title {
   position: absolute;
   color: #ffffff;
-  inset: 20px 0 0 20px;
+  top: 20px;
+  left: 20px;
 }
 
 .products-menu {
@@ -926,11 +927,14 @@ img {
 .products-menu__item--active {
   position: absolute;
   z-index: 10;
-  inset: 0 160px 0 265px;
+  left: 265px;
+  bottom: 0;
+  top: 0;
+  right: 160px;
 }
 @media screen and (max-width: 768px) {
   .products-menu__item--active {
-    inset: 0 0 0 160px;
+    left: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1767,7 +1771,7 @@ img {
   color: #ffffff;
 }
 .burger-menu__list {
-  margin: 100px;
+  margin: 100px 0;
 }
 .burger-menu__link {
   text-decoration: none;
@@ -1783,7 +1787,7 @@ img {
   position: absolute;
   right: 20px;
   top: 30px;
-  background-color: #292929;
+  background-color: #333537;
   border: none;
 }
 .burger-menu__close::before {

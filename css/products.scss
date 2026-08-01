@@ -21,7 +21,8 @@
   &__title {
     position: absolute;
     color: $white;
-    inset: 20px 0 0 20px;
+    top: 20px;
+    left: 20px;
   }
 }
 
@@ -35,10 +36,13 @@
     &--active {
       position: absolute;
       z-index: 10;
-      inset: 0 160px 0 265px;
+      left: 265px;
+      bottom: 0;
+      top: 0;
+      right: 160px;
 
       @include tablets {
-        inset: 0 0 0 160px;
+        left: 0;
       }
 
       @include phones {
